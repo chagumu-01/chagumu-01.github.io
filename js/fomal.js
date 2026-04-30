@@ -66,6 +66,76 @@ function scrollToTop() {
 
 /* 导航栏显示标题 end */
 
+/* 首页去掉查看更多入口 start */
+document.addEventListener('pjax:complete', removeHomeMoreEntry);
+document.addEventListener('DOMContentLoaded', removeHomeMoreEntry);
+
+function removeHomeMoreEntry() {
+  var magnet = document.getElementById("catalog_magnet");
+  if (!magnet) return;
+
+  var wrap = magnet.closest(".recent-post-item");
+  if (wrap) {
+    wrap.remove();
+    return;
+  }
+
+  magnet.remove();
+}
+/* 首页去掉查看更多入口 end */
+
+/* 首页图片舱瀑布流 start */
+document.addEventListener('pjax:complete', rebuildHomeGallery);
+document.addEventListener('DOMContentLoaded', rebuildHomeGallery);
+
+function rebuildHomeGallery() {
+  var summaryDesc = document.querySelector(".home-gallery-summary__desc");
+  if (summaryDesc) {
+    summaryDesc.innerText = "学习的过程中不要忘了记录生活";
+  }
+
+  var body = document.querySelector(".home-gallery-body");
+  if (!body) return;
+
+  body.innerHTML = `
+    <div class="home-gallery-wall">
+      <a class="home-gallery-card home-gallery-card--hero" href="/assets/1.jpg" data-fancybox="home-gallery" title="首页精选图 01">
+        <img src="/assets/1.jpg" alt="首页精选图 01">
+        <span class="home-gallery-card__label">落日</span>
+      </a>
+      <a class="home-gallery-card home-gallery-card--tall" href="/assets/2.jpg" data-fancybox="home-gallery" title="首页精选图 02">
+        <img src="/assets/2.jpg" alt="首页精选图 02">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/3.jpg" data-fancybox="home-gallery" title="首页精选图 03">
+        <img src="/assets/3.jpg" alt="首页精选图 03">
+        <span class="home-gallery-card__label">江</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/4.jpg" data-fancybox="home-gallery" title="首页精选图 04">
+        <img src="/assets/4.jpg" alt="首页精选图 04">
+        <span class="home-gallery-card__label">落日</span>
+      </a>
+      <a class="home-gallery-card home-gallery-card--tall" href="/assets/5.jpg" data-fancybox="home-gallery" title="首页精选图 05">
+        <img src="/assets/5.jpg" alt="首页精选图 05">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/6.jpg" data-fancybox="home-gallery" title="首页精选图 06">
+        <img src="/assets/6.jpg" alt="首页精选图 06">
+        <span class="home-gallery-card__label">网球</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/7.jpg" data-fancybox="home-gallery" title="首页精选图 07">
+        <img src="/assets/7.jpg" alt="首页精选图 07">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/8.jpg" data-fancybox="home-gallery" title="首页精选图 08">
+        <img src="/assets/8.jpg" alt="首页精选图 08">
+        <span class="home-gallery-card__label">树</span>
+      </a>
+    </div>
+  `;
+}
+/* 首页图片舱瀑布流 end */
+
 //----------------------------------------------------------------
 
 /* 欢迎信息 start */
