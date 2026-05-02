@@ -176,8 +176,7 @@ function initTotoroContributionBoard() {
         </div>
         <div class="totoro-board__title-group">
           <h2 class="totoro-board__title">森林创作集</h2>
-          <p class="totoro-board__subtitle">ARTICLE CONTRIBUTION GALLERY</p>
-          <p class="totoro-board__meta">最近 90 天共发布 ${boardData.totalContributions} 篇文章，活跃更新 ${boardData.activeDays} 天，单日最高 ${boardData.bestDay} 篇。</p>
+          <p class="totoro-board__subtitle">FOREST INSPIRATION GALLERY</p>
         </div>
         <div class="totoro-board__spirit-pack" aria-hidden="true">
           <span class="totoro-board__spirit-dot"></span>
@@ -192,14 +191,14 @@ function initTotoroContributionBoard() {
       <div class="totoro-board__footer">
         <div class="totoro-board__legend">
           <span class="totoro-board__legend-icon" aria-hidden="true"></span>
-          <span class="totoro-board__legend-text">留白</span>
+          <span class="totoro-board__legend-text">雨天</span>
           <span class="totoro-dot totoro-dot--rain"></span>
           <span class="totoro-dot totoro-dot--leaf"></span>
-          <span class="totoro-dot totoro-dot--acorn"></span>
           <span class="totoro-dot totoro-dot--soot"></span>
-          <span class="totoro-board__legend-text">嫩叶 / 栗子 / 灰尘精灵</span>
+          <span class="totoro-dot totoro-dot--acorn"></span>
+          <span class="totoro-board__legend-text">丰收</span>
         </div>
-        <p class="totoro-board__quote">每个格子代表一天，记录那天诞生的新文章。<span aria-hidden="true"> ✨</span></p>
+        <p class="totoro-board__quote">"只要内心充满希望，森林就会为你歌唱"<span aria-hidden="true"> ✨</span></p>
       </div>
     </section>
   `;
