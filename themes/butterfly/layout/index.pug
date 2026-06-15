@@ -2,7 +2,48 @@ extends includes/layout.pug
 
 block content
   include ./includes/mixins/post-ui.pug
+  - const totoroPostDates = []
+  - site.posts.sort('date', -1).each(function(article){ totoroPostDates.push(date(article.date, 'YYYY-MM-DD')) })
   #recent-posts.recent-posts
+    details.home-gallery-panel
+      summary.home-gallery-summary
+        .home-gallery-summary__copy
+          span.home-gallery-summary__eyebrow Visual Shelf
+          h2.home-gallery-summary__title 分享生活照
+          p.home-gallery-summary__desc 学习的过程中不要忘了记录生活
+        .home-gallery-summary__action
+          span.home-gallery-summary__hint 点击展开
+          i.fas.fa-plus.home-gallery-summary__icon
+      .home-gallery-body
+        .home-gallery-wall
+          a.home-gallery-card.home-gallery-card--hero(href='/assets/1.jpg' data-fancybox='home-gallery' title='首页精选图 01')
+            img(src='/assets/1.jpg' alt='首页精选图 01')
+            span.home-gallery-card__label 落日
+          a.home-gallery-card.home-gallery-card--tall(href='/assets/2.jpg' data-fancybox='home-gallery' title='首页精选图 02')
+            img(src='/assets/2.jpg' alt='首页精选图 02')
+            span.home-gallery-card__label 蓝天
+          a.home-gallery-card(href='/assets/3.jpg' data-fancybox='home-gallery' title='首页精选图 03')
+            img(src='/assets/3.jpg' alt='首页精选图 03')
+            span.home-gallery-card__label 江
+          a.home-gallery-card(href='/assets/4.jpg' data-fancybox='home-gallery' title='首页精选图 04')
+            img(src='/assets/4.jpg' alt='首页精选图 04')
+            span.home-gallery-card__label 落日
+          a.home-gallery-card.home-gallery-card--tall(href='/assets/5.jpg' data-fancybox='home-gallery' title='首页精选图 05')
+            img(src='/assets/5.jpg' alt='首页精选图 05')
+            span.home-gallery-card__label 蓝天
+          a.home-gallery-card(href='/assets/6.jpg' data-fancybox='home-gallery' title='首页精选图 06')
+            img(src='/assets/6.jpg' alt='首页精选图 06')
+            span.home-gallery-card__label 网球
+          a.home-gallery-card(href='/assets/7.jpg' data-fancybox='home-gallery' title='首页精选图 07')
+            img(src='/assets/7.jpg' alt='首页精选图 07')
+            span.home-gallery-card__label 蓝天
+          a.home-gallery-card(href='/assets/8.jpg' data-fancybox='home-gallery' title='首页精选图 08')
+            img(src='/assets/8.jpg' alt='首页精选图 08')
+            span.home-gallery-card__label 树
+    .recent-post-item.recent-post-item--totoro
+      section.home-totoro-panel
+        .totoro-board-host
+          script.totoro-board-data(type='application/json')!= JSON.stringify(totoroPostDates)
     //- #bber-talk
     //-   link(rel="stylesheet", href="/static/css/bbtalk.css")
     //-   script(src='/static/js/timeago.min.js')

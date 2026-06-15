@@ -1,0 +1,610 @@
+---
+title: 大模型资料
+date: 2026-03-24 20:00:00
+top_img: false
+---
+
+<div class="aurora-page aurora-page--ai">
+  <section class="aurora-hero">
+    <div class="aurora-hero__wash aurora-hero__wash--one"></div>
+    <div class="aurora-hero__wash aurora-hero__wash--two"></div>
+    <div class="aurora-hero__content">
+      <span class="aurora-kicker">MODEL LANDSCAPE</span>
+      <h1 class="aurora-title">大模型资料中心</h1>
+      <p class="aurora-subtitle">把模型认知、工具链、学习路径和趋势观察做成更夺目的官网式页面，不再像资料仓库，而像一个正在发光的 AI 产品入口。</p>
+      <div class="aurora-chip-row">
+        <span class="aurora-chip">多模态</span>
+        <span class="aurora-chip">Agent</span>
+        <span class="aurora-chip">RAG</span>
+        <span class="aurora-chip">Evaluation</span>
+      </div>
+      <div class="aurora-metric-row">
+        <article class="aurora-metric">
+          <strong>模型选型</strong>
+          <span>按能力而不是热搜做判断</span>
+        </article>
+        <article class="aurora-metric">
+          <strong>系统落地</strong>
+          <span>从 Prompt 走到工程链条</span>
+        </article>
+      </div>
+    </div>
+    <div class="aurora-hero__visual">
+      <div class="aurora-sphere"></div>
+      <article class="aurora-floating-card aurora-floating-card--primary">
+        <span>NOW FOCUS</span>
+        <strong>模型能力边界</strong>
+      </article>
+      <article class="aurora-floating-card aurora-floating-card--secondary">
+        <span>ENGINEERING</span>
+        <strong>RAG / Tool Use / Agent</strong>
+      </article>
+    </div>
+  </section>
+
+  <div class="aurora-tabs" data-aurora-tabs="ai">
+    <button class="aurora-tab is-active" type="button" data-tab-target="ai-models">模型矩阵</button>
+    <button class="aurora-tab" type="button" data-tab-target="ai-stack">工程落地</button>
+    <button class="aurora-tab" type="button" data-tab-target="ai-path">学习路径</button>
+    <button class="aurora-tab" type="button" data-tab-target="ai-radar">趋势观察</button>
+  </div>
+
+  <div class="aurora-panels">
+    <section class="aurora-panel is-active" id="ai-models" data-tab-panel>
+      <div class="aurora-section-head">
+        <div>
+          <span class="aurora-eyebrow">MODEL INDEX</span>
+          <h2>别只看谁最火，要看谁最适合你现在的任务</h2>
+        </div>
+        <div class="aurora-section-copy">
+          <p>把高频模型按推理、代码、多模态和开源路线拆开，减少选择时的噪音和跟风。</p>
+          <a class="aurora-section-action" href="/ai/models/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="aurora-card-grid">
+        <article class="aurora-card aurora-card--feature">
+          <span class="aurora-badge">Reasoning</span>
+          <h3>推理型模型</h3>
+          <p>适合复杂任务拆解、长链路分析和结构化输出，对稳定性和任务理解要求更高。</p>
+          <div class="aurora-tag-row">
+            <span>复杂问答</span>
+            <span>规划</span>
+            <span>高质量输出</span>
+          </div>
+        </article>
+        <article class="aurora-card">
+          <span class="aurora-badge">Code</span>
+          <h3>代码型模型</h3>
+          <p>更关注补全、修复、仓库理解和 Agent 协作，是开发工作流里的高频模型类型。</p>
+          <div class="aurora-tag-row">
+            <span>补全</span>
+            <span>调试</span>
+            <span>测试生成</span>
+          </div>
+        </article>
+        <article class="aurora-card">
+          <span class="aurora-badge">Vision</span>
+          <h3>多模态模型</h3>
+          <p>适合图像、文档、界面和视频理解，重点看视觉定位和混合内容理解能力。</p>
+          <div class="aurora-tag-row">
+            <span>OCR</span>
+            <span>界面理解</span>
+            <span>视频摘要</span>
+          </div>
+        </article>
+        <article class="aurora-card">
+          <span class="aurora-badge">Open Source</span>
+          <h3>开源部署路线</h3>
+          <p>适合私有化、本地化和垂直场景微调，重点看生态、推理成本和可控性。</p>
+          <div class="aurora-tag-row">
+            <span>私有化</span>
+            <span>微调</span>
+            <span>量化</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="aurora-panel" id="ai-stack" data-tab-panel>
+      <div class="aurora-section-head">
+        <div>
+          <span class="aurora-eyebrow">SYSTEM FLOW</span>
+          <h2>真正让大模型有价值的，是完整工程链而不是单条提示词</h2>
+        </div>
+        <div class="aurora-section-copy">
+          <p>如果只停留在聊天层，能力很快到顶；往下走一层，才是 AI 系统真正开始成型的时候。</p>
+          <a class="aurora-section-action" href="/ai/stack/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="aurora-flow-grid">
+        <article class="aurora-flow-card">
+          <span class="aurora-index">01</span>
+          <h3>模型接入</h3>
+          <p>请求封装、流式输出、缓存、重试、日志归档，是最基础的调用层。</p>
+        </article>
+        <article class="aurora-flow-card">
+          <span class="aurora-index">02</span>
+          <h3>知识检索</h3>
+          <p>切片、Embedding、召回、重排，决定系统能否从“会说”变成“有依据地说”。</p>
+        </article>
+        <article class="aurora-flow-card">
+          <span class="aurora-index">03</span>
+          <h3>工具调用</h3>
+          <p>搜索、数据库、文件和命令行工具接入后，模型开始具备行动能力。</p>
+        </article>
+        <article class="aurora-flow-card">
+          <span class="aurora-index">04</span>
+          <h3>Agent 编排</h3>
+          <p>规划、执行、反思、多工具协同，是复杂任务自动化的核心结构。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="aurora-panel" id="ai-path" data-tab-panel>
+      <div class="aurora-section-head">
+        <div>
+          <span class="aurora-eyebrow">LEARNING PATH</span>
+          <h2>从“会用模型”走向“会做 AI 系统”</h2>
+        </div>
+        <div class="aurora-section-copy">
+          <p>学习顺序不是概念堆砌，而是每一段都能做出一个更完整的东西。</p>
+          <a class="aurora-section-action" href="/ai/path/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="aurora-timeline">
+        <article class="aurora-timeline-card">
+          <span class="aurora-step">STEP 1</span>
+          <h3>模型基础认知</h3>
+          <p>补齐 token、context、采样参数、幻觉和对齐等基本概念。</p>
+        </article>
+        <article class="aurora-timeline-card">
+          <span class="aurora-step">STEP 2</span>
+          <h3>API 与结构化输出</h3>
+          <p>理解消息结构、工具调用、流式返回和 JSON 输出稳定性。</p>
+        </article>
+        <article class="aurora-timeline-card">
+          <span class="aurora-step">STEP 3</span>
+          <h3>RAG 与知识增强</h3>
+          <p>做一个自己的资料问答系统，理解检索、切片和重排的真正价值。</p>
+        </article>
+        <article class="aurora-timeline-card">
+          <span class="aurora-step">STEP 4</span>
+          <h3>Agent 与自动化</h3>
+          <p>给模型接上工具和外部系统，让它真正开始处理任务而不是只回答问题。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="aurora-panel" id="ai-radar" data-tab-panel>
+      <div class="aurora-section-head">
+        <div>
+          <span class="aurora-eyebrow">TREND RADAR</span>
+          <h2>更值得长期盯住的，不只是新模型发布</h2>
+        </div>
+        <div class="aurora-section-copy">
+          <p>真正影响落地的，是哪些能力开始稳定、便宜、易接入、可工程化。</p>
+          <a class="aurora-section-action" href="/ai/radar/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="aurora-note-grid">
+        <article class="aurora-note-card">
+          <h3>长上下文的真实含金量</h3>
+          <p>不是 token 越长越强，而是长文档、多文件和多轮任务里还能不能稳定定位。</p>
+        </article>
+        <article class="aurora-note-card">
+          <h3>多 Agent 协作</h3>
+          <p>什么时候单 Agent 足够，什么时候需要角色拆分和任务路由，是接下来很关键的分界线。</p>
+        </article>
+        <article class="aurora-note-card">
+          <h3>小模型本地化</h3>
+          <p>在隐私敏感和成本敏感场景里，本地模型依然会持续有很强的现实价值。</p>
+        </article>
+        <article class="aurora-note-card">
+          <h3>评测优先</h3>
+          <p>真正稳定的 AI 产品，背后一定先有样本集、回归基线和错误归因体系。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>
+
+<style>
+.aurora-page {
+  --aurora-text: #14243c;
+  --aurora-muted: #5d6f88;
+  --aurora-border: rgba(141, 147, 255, 0.16);
+  margin: -1rem -1rem 0;
+  padding: 24px;
+  color: var(--aurora-text);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 205, 110, 0.28), transparent 20%),
+    radial-gradient(circle at 88% 12%, rgba(115, 147, 255, 0.26), transparent 24%),
+    radial-gradient(circle at 70% 82%, rgba(92, 234, 214, 0.18), transparent 20%),
+    linear-gradient(180deg, #fffaf3 0%, #f5f6ff 45%, #f8fcff 100%);
+  overflow: hidden;
+}
+
+.aurora-page * {
+  box-sizing: border-box;
+}
+
+.aurora-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.95fr);
+  gap: 24px;
+  padding: 38px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.72));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 26px 60px rgba(136, 144, 255, 0.13);
+  overflow: hidden;
+}
+
+.aurora-hero__wash {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.aurora-hero__wash--one {
+  width: 360px;
+  height: 360px;
+  left: -120px;
+  top: -120px;
+  background: radial-gradient(circle, rgba(255, 198, 84, 0.30), transparent 68%);
+}
+
+.aurora-hero__wash--two {
+  width: 320px;
+  height: 320px;
+  right: -80px;
+  top: -60px;
+  background: radial-gradient(circle, rgba(124, 146, 255, 0.28), transparent 68%);
+}
+
+.aurora-hero__content,
+.aurora-hero__visual {
+  position: relative;
+  z-index: 1;
+}
+
+.aurora-kicker,
+.aurora-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7d4d00;
+  background: rgba(255, 206, 114, 0.18);
+  border: 1px solid rgba(255, 206, 114, 0.30);
+}
+
+.aurora-title {
+  margin: 18px 0 14px;
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  color: #182845;
+}
+
+.aurora-subtitle {
+  margin: 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--aurora-muted);
+}
+
+.aurora-chip-row,
+.aurora-metric-row,
+.aurora-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.aurora-chip-row {
+  margin-top: 24px;
+}
+
+.aurora-metric-row {
+  margin-top: 22px;
+}
+
+.aurora-chip,
+.aurora-tag-row span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #314563;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(144, 149, 255, 0.14);
+}
+
+.aurora-metric {
+  min-width: 190px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(144, 149, 255, 0.14);
+}
+
+.aurora-metric strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.aurora-metric span,
+.aurora-card p,
+.aurora-flow-card p,
+.aurora-timeline-card p,
+.aurora-note-card p,
+.aurora-section-head p,
+.aurora-floating-card span {
+  color: var(--aurora-muted);
+  line-height: 1.8;
+}
+
+.aurora-hero__visual {
+  position: relative;
+  min-height: 320px;
+}
+
+.aurora-sphere {
+  position: absolute;
+  inset: 18px 20px 18px 34px;
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at 32% 30%, rgba(255, 211, 107, 0.7), rgba(255, 211, 107, 0.08) 26%, transparent 30%),
+    radial-gradient(circle at 62% 38%, rgba(120, 146, 255, 0.72), rgba(120, 146, 255, 0.10) 26%, transparent 30%),
+    radial-gradient(circle at 50% 70%, rgba(80, 226, 214, 0.66), rgba(80, 226, 214, 0.08) 24%, transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(245, 248, 255, 0.62));
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
+
+.aurora-floating-card {
+  position: absolute;
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(146, 150, 255, 0.16);
+  box-shadow: 0 18px 40px rgba(131, 140, 255, 0.14);
+  backdrop-filter: blur(14px);
+}
+
+.aurora-floating-card strong {
+  display: block;
+  margin-top: 6px;
+  color: #192844;
+}
+
+.aurora-floating-card--primary {
+  left: 14px;
+  top: 18px;
+}
+
+.aurora-floating-card--secondary {
+  right: 8px;
+  bottom: 24px;
+}
+
+.aurora-tabs {
+  position: sticky;
+  top: 78px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(144, 149, 255, 0.14);
+  box-shadow: 0 14px 35px rgba(135, 144, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.aurora-tab {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #536784;
+  background: transparent;
+  transition: 0.25s ease;
+}
+
+.aurora-tab:hover,
+.aurora-tab.is-active {
+  color: #fff;
+  background: linear-gradient(135deg, #ffbf54, #7d8fff 72%);
+  box-shadow: 0 12px 24px rgba(135, 144, 255, 0.24);
+}
+
+.aurora-panel {
+  display: none;
+  padding-top: 26px;
+  animation: auroraFade 0.35s ease;
+}
+
+.aurora-panel.is-active {
+  display: block;
+}
+
+@keyframes auroraFade {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.aurora-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.aurora-section-copy {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.aurora-section-head h2,
+.aurora-card h3,
+.aurora-flow-card h3,
+.aurora-timeline-card h3,
+.aurora-note-card h3 {
+  margin: 14px 0 8px;
+  color: #172841;
+}
+
+.aurora-card-grid,
+.aurora-flow-grid,
+.aurora-note-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aurora-card,
+.aurora-flow-card,
+.aurora-timeline-card,
+.aurora-note-card {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--aurora-border);
+  box-shadow: 0 18px 40px rgba(140, 149, 255, 0.10);
+}
+
+.aurora-section-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffbf54, #7d8fff 72%);
+  box-shadow: 0 12px 24px rgba(135, 144, 255, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.aurora-section-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(135, 144, 255, 0.28);
+}
+
+.aurora-card--feature {
+  background:
+    linear-gradient(135deg, rgba(255, 198, 84, 0.12), rgba(123, 145, 255, 0.10)),
+    rgba(255, 255, 255, 0.88);
+}
+
+.aurora-badge {
+  display: inline-flex;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #7d55ff;
+  background: rgba(140, 122, 255, 0.10);
+}
+
+.aurora-index,
+.aurora-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #895400;
+  background: rgba(255, 206, 114, 0.16);
+}
+
+.aurora-timeline {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .aurora-page {
+    margin: -1rem 0 0;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .aurora-hero,
+  .aurora-section-head,
+  .aurora-card-grid,
+  .aurora-flow-grid,
+  .aurora-note-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aurora-hero {
+    padding: 26px;
+  }
+
+  .aurora-tabs {
+    top: 64px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .aurora-tab {
+    white-space: nowrap;
+  }
+}
+</style>
+
+<script>
+(function() {
+  function initAuroraTabs() {
+    document.querySelectorAll('[data-aurora-tabs]').forEach(function(tabbar) {
+      var page = tabbar.closest('.aurora-page');
+      if (!page || page.dataset.auroraReady === 'true') return;
+      page.dataset.auroraReady = 'true';
+
+      var tabs = tabbar.querySelectorAll('[data-tab-target]');
+      var panels = page.querySelectorAll('[data-tab-panel]');
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var target = tab.getAttribute('data-tab-target');
+          tabs.forEach(function(item) { item.classList.remove('is-active'); });
+          panels.forEach(function(panel) { panel.classList.remove('is-active'); });
+
+          tab.classList.add('is-active');
+          var panel = page.querySelector('#' + target);
+          if (panel) panel.classList.add('is-active');
+
+          window.scrollTo({
+            top: tabbar.getBoundingClientRect().top + window.scrollY - 90,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  }
+
+  initAuroraTabs();
+  document.addEventListener('DOMContentLoaded', initAuroraTabs);
+  document.addEventListener('pjax:complete', initAuroraTabs);
+})();
+</script>

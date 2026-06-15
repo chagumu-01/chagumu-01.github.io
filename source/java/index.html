@@ -1,0 +1,631 @@
+---
+title: Java资料
+date: 2026-03-24 19:00:00
+top_img: false
+---
+
+<div class="luma-page luma-page--java">
+  <section class="luma-hero">
+    <div class="luma-hero__halo luma-hero__halo--left"></div>
+    <div class="luma-hero__halo luma-hero__halo--right"></div>
+    <div class="luma-hero__content">
+      <span class="luma-kicker">JAVA ENGINEERING</span>
+      <h1 class="luma-title">Java 学习资料中心</h1>
+      <p class="luma-subtitle">用更像官网的方式重组 Java 学习路径：先看清底层，再进入企业栈，最后走到项目和工程能力，而不是把知识点堆成一面长墙。</p>
+      <div class="luma-pill-row">
+        <span class="luma-pill">JVM</span>
+        <span class="luma-pill">Spring Boot</span>
+        <span class="luma-pill">MyBatis</span>
+        <span class="luma-pill">Redis</span>
+      </div>
+      <div class="luma-highlight-row">
+        <article class="luma-highlight">
+          <strong>4 大模块</strong>
+          <span>基础、企业栈、实战、路线</span>
+        </article>
+        <article class="luma-highlight">
+          <strong>12 周路径</strong>
+          <span>从入门到能交付项目</span>
+        </article>
+      </div>
+    </div>
+    <div class="luma-hero__orbit">
+      <div class="luma-orbit-card">
+        <span class="luma-orbit-card__label">核心认知</span>
+        <strong>先理解，再刷题</strong>
+        <p>不是记 API，而是看懂语言设计、运行机制和工程协作。</p>
+      </div>
+      <div class="luma-orbit-glow"></div>
+    </div>
+  </section>
+
+  <div class="luma-tabs" data-luma-tabs="java">
+    <button class="luma-tab is-active" type="button" data-tab-target="java-core">基础内核</button>
+    <button class="luma-tab" type="button" data-tab-target="java-stack">企业栈</button>
+    <button class="luma-tab" type="button" data-tab-target="java-practice">实战项目</button>
+    <button class="luma-tab" type="button" data-tab-target="java-roadmap">成长路线</button>
+  </div>
+
+  <div class="luma-panels">
+    <section class="luma-panel is-active" id="java-core" data-tab-panel>
+      <div class="luma-section-head">
+        <div>
+          <span class="luma-eyebrow">CORE LAYER</span>
+          <h2>先把底座打稳，后面每一层才不会虚</h2>
+        </div>
+        <div class="luma-section-copy">
+          <p>这部分重点不是“看过”，而是能解释清楚为什么这样写、这样运行、这样设计。</p>
+          <a class="luma-section-action" href="/java/core/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="luma-card-grid">
+        <article class="luma-card luma-card--feature">
+          <span class="luma-badge">Language</span>
+          <h3>语法与面向对象</h3>
+          <p>变量、流程控制、封装、继承、多态、接口与泛型，是 Java 表达能力的第一层。</p>
+          <div class="luma-tag-row">
+            <span>OOP</span>
+            <span>泛型</span>
+            <span>异常</span>
+          </div>
+        </article>
+        <article class="luma-card">
+          <span class="luma-badge">Collections</span>
+          <h3>集合与常用 API</h3>
+          <p>ArrayList、HashMap、Set、Stream、Optional，这决定你日常代码是不是顺手且清晰。</p>
+          <div class="luma-tag-row">
+            <span>Map</span>
+            <span>Stream</span>
+            <span>Lambda</span>
+          </div>
+        </article>
+        <article class="luma-card">
+          <span class="luma-badge">Concurrency</span>
+          <h3>并发与线程模型</h3>
+          <p>线程池、锁、CAS、可见性和有序性，是服务是否扛压的关键分水岭。</p>
+          <div class="luma-tag-row">
+            <span>JUC</span>
+            <span>Lock</span>
+            <span>ThreadPool</span>
+          </div>
+        </article>
+        <article class="luma-card">
+          <span class="luma-badge">JVM</span>
+          <h3>JVM 运行机制</h3>
+          <p>类加载、内存结构、垃圾回收和调优，是从“会写”走向“会查问题”的关键一步。</p>
+          <div class="luma-tag-row">
+            <span>GC</span>
+            <span>ClassLoader</span>
+            <span>调优</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="luma-panel" id="java-stack" data-tab-panel>
+      <div class="luma-section-head">
+        <div>
+          <span class="luma-eyebrow">ENTERPRISE STACK</span>
+          <h2>企业开发不是框架清单，而是一条职责链</h2>
+        </div>
+        <div class="luma-section-copy">
+          <p>把常用组件按“写服务时到底负责什么”拆开，比按名字背诵更有价值。</p>
+          <a class="luma-section-action" href="/java/stack/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="luma-flow-grid">
+        <article class="luma-flow-card">
+          <span class="luma-index">01</span>
+          <h3>Spring / Spring Boot</h3>
+          <p>IoC、AOP、自动配置和 Starter 机制，是现代 Java 服务开发的核心框架层。</p>
+        </article>
+        <article class="luma-flow-card">
+          <span class="luma-index">02</span>
+          <h3>数据库与持久层</h3>
+          <p>MyBatis、事务、连接池、SQL 调优，决定服务是否稳定且可维护。</p>
+        </article>
+        <article class="luma-flow-card">
+          <span class="luma-index">03</span>
+          <h3>缓存与消息队列</h3>
+          <p>Redis、MQ、削峰填谷、异步解耦，是业务复杂后绕不开的常见模块。</p>
+        </article>
+        <article class="luma-flow-card">
+          <span class="luma-index">04</span>
+          <h3>微服务与治理</h3>
+          <p>服务发现、配置中心、网关、限流熔断和链路追踪，让系统开始真正成型。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="luma-panel" id="java-practice" data-tab-panel>
+      <div class="luma-section-head">
+        <div>
+          <span class="luma-eyebrow">PROJECT MODE</span>
+          <h2>让知识落地的最快方式，是做能讲得清楚的项目</h2>
+        </div>
+        <div class="luma-section-copy">
+          <p>项目不必多，但要能把模块关系、设计取舍和故障处理讲清楚。</p>
+          <a class="luma-section-action" href="/java/practice/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="luma-dual-grid">
+        <article class="luma-spotlight">
+          <span class="luma-badge">Project 01</span>
+          <h3>后台管理系统</h3>
+          <p>用户、角色、权限、菜单、日志、认证，适合把 Spring Boot、JWT、RBAC 串起来。</p>
+        </article>
+        <article class="luma-spotlight">
+          <span class="luma-badge">Project 02</span>
+          <h3>订单或电商系统</h3>
+          <p>库存、下单、支付回调、消息通知、缓存和事务，适合练分层设计与一致性处理。</p>
+        </article>
+      </div>
+
+      <div class="luma-note-grid">
+        <article class="luma-note-card">
+          <h3>工具链也要一起练</h3>
+          <p>Maven、Git、Docker、日志与监控，不是加分项，而是工程能力的组成部分。</p>
+        </article>
+        <article class="luma-note-card">
+          <h3>排障能力拉开差距</h3>
+          <p>会看堆栈、查慢 SQL、看线程状态、读日志，才能从“能写”走到“能扛事”。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="luma-panel" id="java-roadmap" data-tab-panel>
+      <div class="luma-section-head">
+        <div>
+          <span class="luma-eyebrow">ROADMAP</span>
+          <h2>一条更像工程师成长的路线</h2>
+        </div>
+        <div class="luma-section-copy">
+          <p>不是资料越多越好，而是每个阶段都知道自己该产出什么。</p>
+          <a class="luma-section-action" href="/java/roadmap/">进入资料页</a>
+        </div>
+      </div>
+
+      <div class="luma-timeline">
+        <article class="luma-timeline-card">
+          <span class="luma-step">WEEK 1-2</span>
+          <h3>语法、OOP、集合</h3>
+          <p>建立语言手感，写出结构正确、可读性过关的代码。</p>
+        </article>
+        <article class="luma-timeline-card">
+          <span class="luma-step">WEEK 3-5</span>
+          <h3>并发、JVM、调试</h3>
+          <p>开始理解运行原理，也开始学会如何定位问题。</p>
+        </article>
+        <article class="luma-timeline-card">
+          <span class="luma-step">WEEK 6-9</span>
+          <h3>Spring Boot、数据库</h3>
+          <p>做出一个真正可用的后端服务，建立接口、持久化和配置管理思维。</p>
+        </article>
+        <article class="luma-timeline-card">
+          <span class="luma-step">WEEK 10-12</span>
+          <h3>缓存、消息、部署</h3>
+          <p>系统复杂度提升后，工程能力会开始明显分层。</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>
+
+<style>
+.luma-page {
+  --luma-text: #132238;
+  --luma-muted: #5c6f87;
+  --luma-border: rgba(112, 163, 255, 0.18);
+  --luma-white: rgba(255, 255, 255, 0.78);
+  --luma-shadow: 0 24px 60px rgba(114, 142, 255, 0.14);
+  margin: -1rem -1rem 0;
+  padding: 24px;
+  color: var(--luma-text);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(96, 225, 186, 0.24), transparent 24%),
+    radial-gradient(circle at 92% 10%, rgba(113, 162, 255, 0.28), transparent 24%),
+    linear-gradient(180deg, #fbfeff 0%, #eff7ff 54%, #f7fbff 100%);
+  overflow: hidden;
+}
+
+.luma-page * {
+  box-sizing: border-box;
+}
+
+.luma-page a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.luma-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.9fr);
+  gap: 24px;
+  padding: 38px;
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.68)),
+    linear-gradient(135deg, rgba(120, 255, 214, 0.14), rgba(121, 154, 255, 0.14));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: var(--luma-shadow);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.luma-hero__halo {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  filter: blur(12px);
+  opacity: 0.9;
+}
+
+.luma-hero__halo--left {
+  left: -120px;
+  top: -120px;
+  background: radial-gradient(circle, rgba(85, 232, 178, 0.34), transparent 66%);
+}
+
+.luma-hero__halo--right {
+  right: -100px;
+  top: -80px;
+  background: radial-gradient(circle, rgba(116, 149, 255, 0.30), transparent 68%);
+}
+
+.luma-hero__content,
+.luma-hero__orbit {
+  position: relative;
+  z-index: 1;
+}
+
+.luma-kicker,
+.luma-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1d6d73;
+  background: rgba(97, 241, 199, 0.14);
+  border: 1px solid rgba(97, 241, 199, 0.32);
+}
+
+.luma-title {
+  margin: 18px 0 14px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  color: #142640;
+}
+
+.luma-subtitle {
+  margin: 0;
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--luma-muted);
+}
+
+.luma-pill-row,
+.luma-highlight-row,
+.luma-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.luma-pill-row {
+  margin-top: 24px;
+}
+
+.luma-highlight-row {
+  margin-top: 22px;
+}
+
+.luma-pill,
+.luma-tag-row span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #27405f;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(122, 150, 255, 0.16);
+}
+
+.luma-highlight {
+  min-width: 180px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(122, 150, 255, 0.14);
+}
+
+.luma-highlight strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.luma-highlight span,
+.luma-orbit-card p,
+.luma-card p,
+.luma-flow-card p,
+.luma-spotlight p,
+.luma-note-card p,
+.luma-timeline-card p,
+.luma-section-head p {
+  color: var(--luma-muted);
+  line-height: 1.8;
+}
+
+.luma-hero__orbit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.luma-orbit-card {
+  position: relative;
+  width: 100%;
+  padding: 26px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(237, 248, 255, 0.86));
+  border: 1px solid rgba(122, 150, 255, 0.16);
+  box-shadow: 0 18px 50px rgba(103, 164, 255, 0.15);
+}
+
+.luma-orbit-card__label {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #6f56ff;
+  background: rgba(140, 122, 255, 0.10);
+}
+
+.luma-orbit-card strong {
+  display: block;
+  margin: 16px 0 10px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.luma-orbit-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  right: 10%;
+  bottom: -60px;
+  background: radial-gradient(circle, rgba(91, 229, 190, 0.36), transparent 62%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.luma-tabs {
+  position: sticky;
+  top: 78px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(122, 150, 255, 0.14);
+  box-shadow: 0 14px 35px rgba(112, 163, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.luma-tab {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4f6686;
+  background: transparent;
+  transition: 0.25s ease;
+}
+
+.luma-tab:hover,
+.luma-tab.is-active {
+  color: #fff;
+  background: linear-gradient(135deg, #53d9bf, #6b7cff);
+  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.24);
+}
+
+.luma-panel {
+  display: none;
+  padding-top: 26px;
+  animation: lumaFade 0.35s ease;
+}
+
+.luma-panel.is-active {
+  display: block;
+}
+
+@keyframes lumaFade {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.luma-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.luma-section-copy {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+
+.luma-section-head h2,
+.luma-card h3,
+.luma-flow-card h3,
+.luma-spotlight h3,
+.luma-note-card h3,
+.luma-timeline-card h3 {
+  margin: 14px 0 8px;
+  color: #172840;
+}
+
+.luma-card-grid,
+.luma-flow-grid,
+.luma-dual-grid,
+.luma-note-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.luma-card,
+.luma-flow-card,
+.luma-spotlight,
+.luma-note-card,
+.luma-timeline-card {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--luma-border);
+  box-shadow: 0 18px 40px rgba(123, 154, 255, 0.10);
+}
+
+.luma-section-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #53d9bf, #6b7cff);
+  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.luma-section-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(101, 131, 255, 0.28);
+}
+
+.luma-card--feature,
+.luma-spotlight {
+  background:
+    linear-gradient(135deg, rgba(88, 228, 190, 0.12), rgba(112, 136, 255, 0.10)),
+    rgba(255, 255, 255, 0.88);
+}
+
+.luma-badge {
+  display: inline-flex;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #6d54ff;
+  background: rgba(140, 122, 255, 0.10);
+}
+
+.luma-flow-card,
+.luma-timeline-card {
+  position: relative;
+}
+
+.luma-index,
+.luma-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #1f7f87;
+  background: rgba(96, 225, 186, 0.12);
+}
+
+.luma-timeline {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .luma-page {
+    margin: -1rem 0 0;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .luma-hero,
+  .luma-section-head,
+  .luma-card-grid,
+  .luma-flow-grid,
+  .luma-dual-grid,
+  .luma-note-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .luma-hero {
+    padding: 26px;
+  }
+
+  .luma-tabs {
+    top: 64px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .luma-tab {
+    white-space: nowrap;
+  }
+}
+</style>
+
+<script>
+(function() {
+  function initLumaTabs() {
+    document.querySelectorAll('[data-luma-tabs]').forEach(function(tabbar) {
+      var page = tabbar.closest('.luma-page');
+      if (!page || page.dataset.lumaReady === 'true') return;
+      page.dataset.lumaReady = 'true';
+
+      var tabs = tabbar.querySelectorAll('[data-tab-target]');
+      var panels = page.querySelectorAll('[data-tab-panel]');
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var target = tab.getAttribute('data-tab-target');
+          tabs.forEach(function(item) { item.classList.remove('is-active'); });
+          panels.forEach(function(panel) { panel.classList.remove('is-active'); });
+
+          tab.classList.add('is-active');
+          var panel = page.querySelector('#' + target);
+          if (panel) panel.classList.add('is-active');
+
+          window.scrollTo({
+            top: tabbar.getBoundingClientRect().top + window.scrollY - 90,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  }
+
+  initLumaTabs();
+  document.addEventListener('DOMContentLoaded', initLumaTabs);
+  document.addEventListener('pjax:complete', initLumaTabs);
+})();
+</script>

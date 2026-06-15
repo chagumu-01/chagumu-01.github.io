@@ -25,9 +25,7 @@ if theme.post_copyright.enable && page.copyright !== false
     .post-copyright__title
       span.post-copyright-info
         h #[=page.title]
-    .post-copyright__type
-      span.post-copyright-info
-        a(href=url_for(url))= theme.post_copyright.decode ? decodeURI(url) : url
+
     .post-copyright-m
       .post-copyright-m-info
         .post-copyright-a

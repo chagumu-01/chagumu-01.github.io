@@ -18,7 +18,7 @@ abbrlink:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://u7u7.top/ # 修改自己的git Pages地址
+url: https://chagumu.site/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -34,7 +34,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 指定不渲染某些页面
-skip_render: 
+skip_render:
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -124,8 +124,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repository: https://github.com/shanyangcao/shanyangcao.github.io.git # 修改自己的git仓库地址
-    # git@github.com:u7-u7/u7-u7.github.io.git
+    repository: https://github.com/chagumu-01/chagumu-01.github.io.git # 修改自己的git仓库地址
     # root@47.120.9.247:/home/git/blog.git
     branch: main
   # - type: baidu_url_submitter
@@ -162,7 +161,7 @@ algolia:
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
 swiper:
-  enable: true # 开关
+  enable: false # 开关
   priority: 1 #过滤器优先权
   enable_page: all # 应用页面
   timemode: date #date/updated
@@ -243,7 +242,7 @@ gitcalendar:
   #   name: content
   #   index: 0
   # simplemode: true
-  user:  #git用户名
+  user: chagumu-01 #git用户名
   apiurl: ''
   minheight:
     pc: 320px #桌面端最小高度
@@ -277,20 +276,20 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: 🍡U7の学习笔记
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/微信图片_20230310203314.jpg
-    - descr: 🍼U7の大数据训练笔记
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/微信图片_20230310203304.png
-    - descr: 🍉U7の项目笔记
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-9mvyl8.webp
-    - descr: 🍨U7の总结
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-gpjj97.webp
-    - descr: 🍟U7の算法学习笔记
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-g7xrrd.webp
-    - descr: 🍥U7の博客设计
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-x8o7md.webp
-    - descr: 🍥U7の博客设计
-      cover: https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-x8o7md.webp
+    - descr: 🍡学习笔记
+      cover: https://cdn.phototourl.com/free/2026-03-24-c6cd394d-e102-4c1a-a2d9-c79200a5d472.jpg
+    - descr: 🍼杂项笔记
+      cover: https://cdn.phototourl.com/free/2026-03-24-81758651-c015-4363-82cc-c0a2dedb0429.jpg
+    - descr: 🍉项目笔记
+      cover: https://cdn.phototourl.com/free/2026-03-24-1fdc098a-06b6-40d9-bb67-7adfe5771ce8.jpg
+    - descr: 🍨月总结
+      cover: /assets/1.jpg
+    - descr: 🍟算法笔记
+      cover: /assets/2.jpg
+    - descr: 🍥博客设计
+      cover: /assets/3.jpg
+    - descr: 🍥更多
+      cover: /assets/4.jpg
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 # 小冰分类磁贴
 magnet:
@@ -301,22 +300,22 @@ magnet:
   devide: 3
   display:
     - name: 学习笔记
-      display_name: U7の学习笔记
+      display_name: 学习笔记
       icon: 🍡
     - name: 杂项
-      display_name: U7のLife&Work杂项
+      display_name: Life & Work 杂项
       icon: 🍼
     - name: 项目
-      display_name: U7の项目笔记
+      display_name: 项目笔记
       icon: 🍉
     - name: 工作月总结
-      display_name: U7の工作月总结
+      display_name: 工作月总结
       icon: 🍨
     - name: 算法
-      display_name: U7の算法学习笔记
+      display_name: 算法学习笔记
       icon: 🍟
     - name: 面试
-      display_name: U7の面试
+      display_name: 面试
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色
@@ -336,6 +335,7 @@ butterfly_article_double_row:
 markdown:
   anchors:
     level: 1
+  html: true
     
 # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d

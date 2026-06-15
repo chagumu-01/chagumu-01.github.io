@@ -66,6 +66,338 @@ function scrollToTop() {
 
 /* 导航栏显示标题 end */
 
+/* 首页去掉查看更多入口 start */
+document.addEventListener('pjax:complete', removeHomeMoreEntry);
+document.addEventListener('DOMContentLoaded', removeHomeMoreEntry);
+
+function removeHomeMoreEntry() {
+  var magnet = document.getElementById("catalog_magnet");
+  if (!magnet) return;
+
+  var wrap = magnet.closest(".recent-post-item");
+  if (wrap) {
+    wrap.remove();
+    return;
+  }
+
+  magnet.remove();
+}
+/* 首页去掉查看更多入口 end */
+
+/* 首页图片舱瀑布流 start */
+document.addEventListener('pjax:complete', rebuildHomeGallery);
+document.addEventListener('DOMContentLoaded', rebuildHomeGallery);
+
+function rebuildHomeGallery() {
+  var summaryDesc = document.querySelector(".home-gallery-summary__desc");
+  if (summaryDesc) {
+    summaryDesc.innerText = "学习的过程中不要忘了记录生活";
+  }
+
+  var body = document.querySelector(".home-gallery-body");
+  if (!body) return;
+
+  body.innerHTML = `
+    <div class="home-gallery-wall">
+      <a class="home-gallery-card home-gallery-card--hero" href="/assets/1.jpg" data-fancybox="home-gallery" title="首页精选图 01">
+        <img src="/assets/1.jpg" alt="首页精选图 01">
+        <span class="home-gallery-card__label">落日</span>
+      </a>
+      <a class="home-gallery-card home-gallery-card--tall" href="/assets/2.jpg" data-fancybox="home-gallery" title="首页精选图 02">
+        <img src="/assets/2.jpg" alt="首页精选图 02">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/3.jpg" data-fancybox="home-gallery" title="首页精选图 03">
+        <img src="/assets/3.jpg" alt="首页精选图 03">
+        <span class="home-gallery-card__label">江</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/4.jpg" data-fancybox="home-gallery" title="首页精选图 04">
+        <img src="/assets/4.jpg" alt="首页精选图 04">
+        <span class="home-gallery-card__label">落日</span>
+      </a>
+      <a class="home-gallery-card home-gallery-card--tall" href="/assets/5.jpg" data-fancybox="home-gallery" title="首页精选图 05">
+        <img src="/assets/5.jpg" alt="首页精选图 05">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/6.jpg" data-fancybox="home-gallery" title="首页精选图 06">
+        <img src="/assets/6.jpg" alt="首页精选图 06">
+        <span class="home-gallery-card__label">网球</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/7.jpg" data-fancybox="home-gallery" title="首页精选图 07">
+        <img src="/assets/7.jpg" alt="首页精选图 07">
+        <span class="home-gallery-card__label">蓝天</span>
+      </a>
+      <a class="home-gallery-card" href="/assets/8.jpg" data-fancybox="home-gallery" title="首页精选图 08">
+        <img src="/assets/8.jpg" alt="首页精选图 08">
+        <span class="home-gallery-card__label">树</span>
+      </a>
+    </div>
+  `;
+}
+/* 首页图片舱瀑布流 end */
+
+/* 龙猫森林足迹贡献看板 start */
+document.addEventListener('pjax:complete', refreshTotoroContributionBoard);
+document.addEventListener('DOMContentLoaded', refreshTotoroContributionBoard);
+
+function refreshTotoroContributionBoard() {
+  removeHomeSwiperEntry();
+  initTotoroContributionBoard();
+
+  window.setTimeout(removeHomeSwiperEntry, 320);
+  window.setTimeout(removeHomeSwiperEntry, 960);
+  window.setTimeout(initTotoroContributionBoard, 320);
+}
+
+function removeHomeSwiperEntry() {
+  var swiperContainer = document.getElementById("swiper_container");
+  if (!swiperContainer) return;
+
+  var wrap = swiperContainer.closest(".recent-post-item");
+  if (wrap) {
+    wrap.remove();
+    return;
+  }
+
+  swiperContainer.remove();
+}
+
+function initTotoroContributionBoard() {
+  var host = document.querySelector(".totoro-board-host");
+  if (!host) return;
+  if (host.querySelector(".totoro-board")) return;
+
+  var boardData = buildTotoroContributionData(host, 90);
+  host.innerHTML = `
+    <section class="totoro-board">
+      <div class="totoro-board__header">
+        <div class="totoro-board__brand" aria-hidden="true">
+          <span class="totoro-board__brand-mark"></span>
+        </div>
+        <div class="totoro-board__title-group">
+          <h2 class="totoro-board__title">森林创作集</h2>
+          <p class="totoro-board__subtitle">FOREST INSPIRATION GALLERY</p>
+        </div>
+        <div class="totoro-board__spirit-pack" aria-hidden="true">
+          <span class="totoro-board__spirit-dot"></span>
+          <span class="totoro-board__spirit-dot"></span>
+          <span class="totoro-board__spirit-dot"></span>
+        </div>
+      </div>
+      <div class="totoro-board__field">
+        <div class="totoro-board__tooltip" aria-hidden="true"></div>
+        <div class="totoro-board__trail"></div>
+      </div>
+      <div class="totoro-board__footer">
+        <div class="totoro-board__legend">
+          <span class="totoro-board__legend-icon" aria-hidden="true"></span>
+          <span class="totoro-board__legend-text">雨天</span>
+          <span class="totoro-dot totoro-dot--rain"></span>
+          <span class="totoro-dot totoro-dot--leaf"></span>
+          <span class="totoro-dot totoro-dot--soot"></span>
+          <span class="totoro-dot totoro-dot--acorn"></span>
+          <span class="totoro-board__legend-text">丰收</span>
+        </div>
+        <p class="totoro-board__quote">"只要内心充满希望，森林就会为你歌唱"<span aria-hidden="true"> ✨</span></p>
+      </div>
+    </section>
+  `;
+
+  mountTotoroTrail(host, boardData.days);
+}
+
+function buildTotoroContributionData(host, daysBack) {
+  var days = [];
+  var postDates = parseTotoroPostDates(host);
+  var countsByDate = {};
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var startDate = new Date(today);
+  startDate.setDate(today.getDate() - daysBack + 1);
+  startDate.setHours(0, 0, 0, 0);
+  var totalContributions = 0;
+  var activeDays = 0;
+  var bestDay = 0;
+
+  postDates.forEach(function(dateStr) {
+    countsByDate[dateStr] = (countsByDate[dateStr] || 0) + 1;
+  });
+
+  var leadingEmpty = (startDate.getDay() + 6) % 7;
+  for (var emptyIndex = 0; emptyIndex < leadingEmpty; emptyIndex++) {
+    days.push({
+      placeholder: true
+    });
+  }
+
+  for (var i = 0; i < daysBack; i++) {
+    var current = new Date(startDate);
+    current.setDate(startDate.getDate() + i);
+    var dateStr = formatDateKey(current);
+    var count = countsByDate[dateStr] || 0;
+
+    days.push({
+      date: dateStr,
+      count: count
+    });
+
+    totalContributions += count;
+    if (count > 0) activeDays++;
+    if (count > bestDay) bestDay = count;
+  }
+
+  return {
+    days: days,
+    totalContributions: totalContributions,
+    activeDays: activeDays,
+    bestDay: bestDay
+  };
+}
+
+function parseTotoroPostDates(host) {
+  if (!host) return [];
+
+  try {
+    var dataScript = host.querySelector(".totoro-board-data");
+    var raw = dataScript ? dataScript.textContent : host.getAttribute("data-post-dates") || "[]";
+    var parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter(Boolean) : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function formatDateKey(date) {
+  var year = date.getFullYear();
+  var month = String(date.getMonth() + 1).padStart(2, "0");
+  var day = String(date.getDate()).padStart(2, "0");
+  return year + "-" + month + "-" + day;
+}
+
+function getTotoroElementMeta(count) {
+  if (count === 0) return {
+    label: "留白",
+    className: "totoro-footprint--rain"
+  };
+  if (count === 1) return {
+    label: "嫩叶",
+    className: "totoro-footprint--leaf"
+  };
+  if (count === 2) return {
+    label: "栗子",
+    className: "totoro-footprint--acorn"
+  };
+  return {
+    label: "灰尘精灵",
+    className: "totoro-footprint--soot"
+  };
+}
+
+function mountTotoroTrail(slide, days) {
+  var trail = slide.querySelector(".totoro-board__trail");
+  var tooltip = slide.querySelector(".totoro-board__tooltip");
+  var field = slide.querySelector(".totoro-board__field");
+  if (!trail || !tooltip) return;
+
+  trail.innerHTML = "";
+
+  days.forEach(function(day, itemIndex) {
+    if (day.placeholder) {
+      var placeholder = document.createElement("span");
+      placeholder.className = "totoro-footprint totoro-footprint--placeholder";
+      placeholder.setAttribute("aria-hidden", "true");
+      trail.appendChild(placeholder);
+      return;
+    }
+
+    var meta = getTotoroElementMeta(day.count);
+    var node = document.createElement("button");
+    node.type = "button";
+    node.className = "totoro-footprint " + meta.className + (day.count > 0 ? " is-active" : "");
+    node.style.setProperty("--totoro-delay", (itemIndex * 0.05) + "s");
+    node.setAttribute("data-date", day.date);
+    node.setAttribute("data-count", String(day.count));
+    node.setAttribute("data-label", meta.label);
+    node.setAttribute("aria-label", day.date + "，" + meta.label + "，" + day.count + " 篇文章");
+
+    var inner = document.createElement("span");
+    inner.className = "totoro-footprint__inner";
+
+    if (meta.className === "totoro-footprint--soot") {
+      inner.innerHTML = `
+        <span class="totoro-soot__eye totoro-soot__eye--left"></span>
+        <span class="totoro-soot__eye totoro-soot__eye--right"></span>
+      `;
+    } else if (meta.className === "totoro-footprint--acorn") {
+      inner.innerHTML = `<span class="totoro-acorn__cap"></span><span class="totoro-acorn__shine"></span>`;
+    } else if (meta.className === "totoro-footprint--leaf") {
+      inner.innerHTML = `<span class="totoro-leaf__vein"></span>`;
+    }
+
+    node.appendChild(inner);
+
+    node.addEventListener("mouseenter", function(event) {
+      showTotoroTooltip(tooltip, field, node, day, meta, event);
+    });
+
+    node.addEventListener("mousemove", function(event) {
+      showTotoroTooltip(tooltip, field, node, day, meta, event);
+    });
+
+    node.addEventListener("focus", function(event) {
+      showTotoroTooltip(tooltip, field, node, day, meta, event);
+    });
+
+    node.addEventListener("mouseleave", function() {
+      hideTotoroTooltip(tooltip);
+    });
+
+    node.addEventListener("blur", function() {
+      hideTotoroTooltip(tooltip);
+    });
+
+    trail.appendChild(node);
+  });
+}
+
+function showTotoroTooltip(tooltip, field, node, day, meta, event) {
+  if (!tooltip || !field || !node) return;
+
+  tooltip.textContent = formatTotoroDate(day.date) + " · " + meta.label + " · " + day.count + " 篇文章";
+  tooltip.classList.add("is-visible");
+  tooltip.setAttribute("aria-hidden", "false");
+
+  var fieldRect = field.getBoundingClientRect();
+  var nodeRect = node.getBoundingClientRect();
+  var pointerX = event && typeof event.clientX === "number"
+    ? event.clientX - fieldRect.left
+    : nodeRect.left - fieldRect.left + nodeRect.width / 2;
+  var fallbackY = nodeRect.top - fieldRect.top - 18;
+  var top = Math.max(14, fallbackY);
+  var tooltipWidth = tooltip.offsetWidth || 180;
+  var left = Math.min(
+    Math.max(pointerX, tooltipWidth / 2 + 16),
+    Math.max(tooltipWidth / 2 + 16, fieldRect.width - tooltipWidth / 2 - 16)
+  );
+
+  tooltip.style.left = left + "px";
+  tooltip.style.top = top + "px";
+}
+
+function hideTotoroTooltip(tooltip) {
+  if (!tooltip) return;
+  tooltip.classList.remove("is-visible");
+  tooltip.setAttribute("aria-hidden", "true");
+}
+
+function formatTotoroDate(dateStr) {
+  var parts = dateStr.split("-");
+  if (parts.length !== 3) return dateStr;
+  return parts[1] + "月" + parts[2] + "日";
+}
+
+/* 龙猫森林足迹贡献看板 end */
+
 //----------------------------------------------------------------
 
 /* 欢迎信息 start */
@@ -1121,8 +1453,8 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到u7u7🍋の小家!`,
-    `u7 and cc is now 🍭🍭🍭`,
+    `欢迎来到 chagumu.site`,
+    `总是学习，总在进步`,
     `
         
     ██╗   ██╗███████╗██╗   ██╗███████╗  ██████╗ ██████╗
@@ -1137,7 +1469,7 @@ function createtime1() {
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By U7",
+    "© chagumu",
   ];
 
   setTimeout(
@@ -1176,7 +1508,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by u7u7🍋 %c 你正在访问u7u7🍋の小家",
+      "%c ⚡ chagumu.site %c 你正在访问本站",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1286,8 +1618,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| u7u7🍋") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('u7u7🍋的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| chagumu's blog") ? title.substring(0, title.length - 17) : title;
+    navigator.clipboard.writeText('chagumu.site 分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访');
     new Vue({
       data: function () {
         this.$notify({
@@ -1325,11 +1657,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     //离开当前页面时标签显示内容
-    document.title = '👻U7在这呐~';
+    document.title = '👻抛弃古法，迎接AI~';
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '💀抓到CC啦～';
+    document.title = '💀抛弃古法，迎接AI～';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
@@ -3442,16 +3774,16 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://  imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-72drx3.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-72drx3.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-dpzww3.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-dpzww3.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-j3z8pw.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-j3z8pw.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-k7o2z7.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-k7o2z7.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-l36282.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-l36282.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-m9jjp9.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-m9jjp9.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zygeko.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zygeko.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyggly.jpg)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyggly.jpg)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyxvqy.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyxvqy.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyxz9v.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyxz9v.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://  imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-72drx3.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-72drx3.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-dpzww3.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-dpzww3.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-j3z8pw.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-j3z8pw.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-k7o2z7.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-k7o2z7.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-l36282.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-l36282.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-m9jjp9.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-m9jjp9.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-zygeko.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-zygeko.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-zyggly.jpg)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-zyggly.jpg)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-zyxvqy.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-zyxvqy.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-zyxz9v.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-zyxz9v.webp)')"></a>
 
 
 </div>
@@ -3462,16 +3794,16 @@ function createWinbox() {
 
 {% folding cyan, 查看风景背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-85w1oj.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-85w1oj.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgrpd.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgrpd.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgow1.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgow1.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-jx7xp5.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-jx7xp5.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-rr13k7.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-rr13k7.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-qzqzjd.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-qzqzjd.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-o5mowl.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-o5mowl.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-x6geod.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-x6geod.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-gpgz7e.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-gpgz7e.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-85w63j.webp)" class="imgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-85w63j.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-85w1oj.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-85w1oj.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-kxgrpd.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-kxgrpd.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-kxgow1.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-kxgow1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-jx7xp5.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-jx7xp5.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-rr13k7.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-rr13k7.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-qzqzjd.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-qzqzjd.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-o5mowl.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-o5mowl.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-x6geod.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-x6geod.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-gpgz7e.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-gpgz7e.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-85w63j.webp)" class="imgbox" onclick="changeBg('url(/assets/wallhaven-85w63j.webp)')"></a>
 
 
 </div>
@@ -3520,17 +3852,17 @@ function createWinbox() {
 <h3>6. 适配手机</h3>
 {% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-wej86x.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zyxz9v.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-vqlprl.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-vqlprl.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-m9lxe9.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-m9lxe9.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zy5kdy.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-zy5kdy.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-yxomzg.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-yxomzg.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-yxkkwg.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-yxkkwg.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-gpgwde.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-gpgwde.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgrzq.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-kxgrzq.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-288vgg_1440x2560.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-288vgg_1440x2560.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-7pkv19.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-7pkv19.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-j3mmdy.webp)" class="pimgbox" onclick="changeBg('url(https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/wallhaven-j3mmdy.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-wej86x.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-zyxz9v.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-vqlprl.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-vqlprl.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-m9lxe9.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-m9lxe9.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-zy5kdy.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-zy5kdy.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-yxomzg.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-yxomzg.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-yxkkwg.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-yxkkwg.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-gpgwde.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-gpgwde.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-kxgrzq.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-kxgrzq.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-288vgg_1440x2560.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-288vgg_1440x2560.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-7pkv19.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-7pkv19.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(/assets/wallhaven-j3mmdy.webp)" class="pimgbox" onclick="changeBg('url(/assets/wallhaven-j3mmdy.webp)')"></a>
 </div>
 {% endfolding %}
 
@@ -3553,7 +3885,7 @@ function createWinbox() {
 <h3>8. 自定义背景</h3>
 {% folding cyan, 设置自定义背景 %}
 <p><center>
-<input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://u7imgblog.oss-cn-hangzhou.aliyuncs.com/blogbackground/image.webp">
+<input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://chagumu.site/assets/avatar.webp">
 </center></p>
 <p><center>
 <button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
