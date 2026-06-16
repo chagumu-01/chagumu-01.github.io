@@ -8921,8 +8921,10 @@ span.card-clock-weather {
 }
 
 /* 右边栏设置齿轮转速 */
-i.fas.fa-cog.right_side {
-  animation: fa-spin 5s linear infinite;
+#rightside_config,
+#meihua-button,
+.rightMenu-item[href="javascript:toggleWinbox();"] {
+  display: none !important;
 }
 
 /* 文章封面箭头动画 */

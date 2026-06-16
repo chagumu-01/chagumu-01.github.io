@@ -55,20 +55,6 @@ mixin rightsideItem(array)
     if hideArray
       +rightsideItem(hideArray)
   #rightside-config-show
-    if enable
-      if hide
-        button#rightside_config(type="button" title=_p("rightside.setting"))
-          i.fas.fa-cog.right_side
-    else
-      if is_post()
-        if (readmode || translate.enable || (darkmode.enable && darkmode.button))
-          button#rightside_config(type="button" title=_p("rightside.setting"))
-            i.fas.fa-cog.right_side
-      //- else if translate.enable || (darkmode.enable && darkmode.button)
-      else if hideArray
-        button#rightside_config(type="button" title=_p("rightside.setting"))
-          i.fas.fa-cog.right_side
-
     if showArray
       +rightsideItem(showArray)
 
