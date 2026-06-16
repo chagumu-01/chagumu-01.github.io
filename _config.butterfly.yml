@@ -14,8 +14,8 @@ menu:
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
   资源 || icon-xiangzi || faa-tada || hide:
-    Java资料: /java/ || icon-javascript || faa-tada
-    大模型资料: /ai/ || icon-ai || faa-tada
+    Java资料: /java/core/ || icon-javascript || faa-tada
+    大模型资料: /ai/path/ || icon-ai || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------

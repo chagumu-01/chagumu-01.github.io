@@ -1,631 +1,420 @@
----
-title: Java资料
-date: 2026-03-24 19:00:00
-top_img: false
----
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<div class="luma-page luma-page--java">
-  <section class="luma-hero">
-    <div class="luma-hero__halo luma-hero__halo--left"></div>
-    <div class="luma-hero__halo luma-hero__halo--right"></div>
-    <div class="luma-hero__content">
-      <span class="luma-kicker">JAVA ENGINEERING</span>
-      <h1 class="luma-title">Java 学习资料中心</h1>
-      <p class="luma-subtitle">用更像官网的方式重组 Java 学习路径：先看清底层，再进入企业栈，最后走到项目和工程能力，而不是把知识点堆成一面长墙。</p>
-      <div class="luma-pill-row">
-        <span class="luma-pill">JVM</span>
-        <span class="luma-pill">Spring Boot</span>
-        <span class="luma-pill">MyBatis</span>
-        <span class="luma-pill">Redis</span>
-      </div>
-      <div class="luma-highlight-row">
-        <article class="luma-highlight">
-          <strong>4 大模块</strong>
-          <span>基础、企业栈、实战、路线</span>
-        </article>
-        <article class="luma-highlight">
-          <strong>12 周路径</strong>
-          <span>从入门到能交付项目</span>
-        </article>
-      </div>
-    </div>
-    <div class="luma-hero__orbit">
-      <div class="luma-orbit-card">
-        <span class="luma-orbit-card__label">核心认知</span>
-        <strong>先理解，再刷题</strong>
-        <p>不是记 API，而是看懂语言设计、运行机制和工程协作。</p>
-      </div>
-      <div class="luma-orbit-glow"></div>
-    </div>
-  </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java资料中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <div class="luma-tabs" data-luma-tabs="java">
-    <button class="luma-tab is-active" type="button" data-tab-target="java-core">基础内核</button>
-    <button class="luma-tab" type="button" data-tab-target="java-stack">企业栈</button>
-    <button class="luma-tab" type="button" data-tab-target="java-practice">实战项目</button>
-    <button class="luma-tab" type="button" data-tab-target="java-roadmap">成长路线</button>
-  </div>
+        :root {
+            --primary: #f97316;
+            --primary-dark: #ea580c;
+            --secondary: #fb923c;
+            --accent: #fed7aa;
+            --text-dark: #1c1917;
+            --text-light: #57534e;
+            --bg-light: #fff7ed;
+            --white: #ffffff;
+        }
 
-  <div class="luma-panels">
-    <section class="luma-panel is-active" id="java-core" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">CORE LAYER</span>
-          <h2>先把底座打稳，后面每一层才不会虚</h2>
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+        }
+
+        .java-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+
+        .java-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-60px);
+            }
+        }
+
+        .java-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .java-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .java-title {
+            font-size: clamp(36px, 8vw, 72px);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .java-subtitle {
+            font-size: clamp(16px, 2vw, 20px);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .java-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .java-stat {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-width: 150px;
+        }
+
+        .java-stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--white);
+            display: block;
+        }
+
+        .java-stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 8px;
+        }
+
+        .java-cards {
+            max-width: 1200px;
+            margin: -60px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .java-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .java-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .java-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .java-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .java-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .java-card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+        }
+
+        .java-card:nth-child(2) .java-card-icon {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+        }
+
+        .java-card:nth-child(3) .java-card-icon {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .java-card:nth-child(4) .java-card-icon {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .java-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .java-card-desc {
+            font-size: 15px;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .java-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 15px;
+            transition: gap 0.3s ease;
+        }
+
+        .java-card:hover .java-card-link {
+            gap: 14px;
+        }
+
+        .java-features {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 60px 20px;
+        }
+
+        .java-features-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+
+        .java-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .java-feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .java-feature-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .java-feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .java-feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .java-feature-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .java-stats {
+                gap: 20px;
+            }
+
+            .java-stat {
+                min-width: 120px;
+                padding: 15px;
+            }
+
+            .java-stat-number {
+                font-size: 28px;
+            }
+
+            .java-cards {
+                margin-top: -40px;
+            }
+
+            .java-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="java-hero">
+        <div class="java-hero-content">
+            <div class="java-badge">
+                <i class="fab fa-java"></i> Java Engineering
+            </div>
+            <h1 class="java-title">Java学习资料中心</h1>
+            <p class="java-subtitle">
+                从基础内核到企业级开发，用系统化的方式掌握Java技术栈，打造扎实的工程能力
+            </p>
+            <div class="java-stats">
+                <div class="java-stat">
+                    <span class="java-stat-number">100+</span>
+                    <span class="java-stat-label">学习资料</span>
+                </div>
+                <div class="java-stat">
+                    <span class="java-stat-number">50+</span>
+                    <span class="java-stat-label">实战项目</span>
+                </div>
+                <div class="java-stat">
+                    <span class="java-stat-number">20+</span>
+                    <span class="java-stat-label">框架教程</span>
+                </div>
+            </div>
         </div>
-        <div class="luma-section-copy">
-          <p>这部分重点不是“看过”，而是能解释清楚为什么这样写、这样运行、这样设计。</p>
-          <a class="luma-section-action" href="/java/core/">进入资料页</a>
-        </div>
-      </div>
-
-      <div class="luma-card-grid">
-        <article class="luma-card luma-card--feature">
-          <span class="luma-badge">Language</span>
-          <h3>语法与面向对象</h3>
-          <p>变量、流程控制、封装、继承、多态、接口与泛型，是 Java 表达能力的第一层。</p>
-          <div class="luma-tag-row">
-            <span>OOP</span>
-            <span>泛型</span>
-            <span>异常</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">Collections</span>
-          <h3>集合与常用 API</h3>
-          <p>ArrayList、HashMap、Set、Stream、Optional，这决定你日常代码是不是顺手且清晰。</p>
-          <div class="luma-tag-row">
-            <span>Map</span>
-            <span>Stream</span>
-            <span>Lambda</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">Concurrency</span>
-          <h3>并发与线程模型</h3>
-          <p>线程池、锁、CAS、可见性和有序性，是服务是否扛压的关键分水岭。</p>
-          <div class="luma-tag-row">
-            <span>JUC</span>
-            <span>Lock</span>
-            <span>ThreadPool</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">JVM</span>
-          <h3>JVM 运行机制</h3>
-          <p>类加载、内存结构、垃圾回收和调优，是从“会写”走向“会查问题”的关键一步。</p>
-          <div class="luma-tag-row">
-            <span>GC</span>
-            <span>ClassLoader</span>
-            <span>调优</span>
-          </div>
-        </article>
-      </div>
     </section>
 
-    <section class="luma-panel" id="java-stack" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">ENTERPRISE STACK</span>
-          <h2>企业开发不是框架清单，而是一条职责链</h2>
-        </div>
-        <div class="luma-section-copy">
-          <p>把常用组件按“写服务时到底负责什么”拆开，比按名字背诵更有价值。</p>
-          <a class="luma-section-action" href="/java/stack/">进入资料页</a>
-        </div>
-      </div>
+    <section class="java-cards">
+        <div class="java-card-grid">
+            <a href="/java/core/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3 class="java-card-title">基础内核资料</h3>
+                <p class="java-card-desc">Java核心知识点整理，包括JVM、并发、集合框架等底层原理</p>
+                <span class="java-card-link">
+                    开始学习 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
 
-      <div class="luma-flow-grid">
-        <article class="luma-flow-card">
-          <span class="luma-index">01</span>
-          <h3>Spring / Spring Boot</h3>
-          <p>IoC、AOP、自动配置和 Starter 机制，是现代 Java 服务开发的核心框架层。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">02</span>
-          <h3>数据库与持久层</h3>
-          <p>MyBatis、事务、连接池、SQL 调优，决定服务是否稳定且可维护。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">03</span>
-          <h3>缓存与消息队列</h3>
-          <p>Redis、MQ、削峰填谷、异步解耦，是业务复杂后绕不开的常见模块。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">04</span>
-          <h3>微服务与治理</h3>
-          <p>服务发现、配置中心、网关、限流熔断和链路追踪，让系统开始真正成型。</p>
-        </article>
-      </div>
+            <a href="/java/stack/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="java-card-title">技术栈资料</h3>
+                <p class="java-card-desc">主流Java技术栈学习指南，包括Spring、MyBatis、Redis等</p>
+                <span class="java-card-link">
+                    查看详情 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+
+            <a href="/java/roadmap/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3 class="java-card-title">学习路线图</h3>
+                <p class="java-card-desc">从入门到高级的系统化学习路径和阶段目标</p>
+                <span class="java-card-link">
+                    规划路线 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+
+            <a href="/java/practice/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="java-card-title">实战项目资料</h3>
+                <p class="java-card-desc">真实企业项目案例，从需求分析到上线部署全流程</p>
+                <span class="java-card-link">
+                    参与项目 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+        </div>
     </section>
 
-    <section class="luma-panel" id="java-practice" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">PROJECT MODE</span>
-          <h2>让知识落地的最快方式，是做能讲得清楚的项目</h2>
+    <section class="java-features">
+        <h2 class="java-features-title">
+            <i class="fas fa-star"></i> 学习特色
+        </h2>
+        <div class="java-feature-grid">
+            <div class="java-feature-item">
+                <div class="java-feature-icon">🔍</div>
+                <h3 class="java-feature-title">原理剖析</h3>
+                <p class="java-feature-desc">深入理解底层原理，不做只会调API的码农</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">💻</div>
+                <h3 class="java-feature-title">代码实战</h3>
+                <p class="java-feature-desc">每个知识点都配有完整代码示例</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">📈</div>
+                <h3 class="java-feature-title">循序渐进</h3>
+                <p class="java-feature-desc">从基础到高级，稳扎稳打的学习路径</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">🤝</div>
+                <h3 class="java-feature-title">经验分享</h3>
+                <p class="java-feature-desc">汇集前辈们的学习经验和面试技巧</p>
+            </div>
         </div>
-        <div class="luma-section-copy">
-          <p>项目不必多，但要能把模块关系、设计取舍和故障处理讲清楚。</p>
-          <a class="luma-section-action" href="/java/practice/">进入资料页</a>
-        </div>
-      </div>
-
-      <div class="luma-dual-grid">
-        <article class="luma-spotlight">
-          <span class="luma-badge">Project 01</span>
-          <h3>后台管理系统</h3>
-          <p>用户、角色、权限、菜单、日志、认证，适合把 Spring Boot、JWT、RBAC 串起来。</p>
-        </article>
-        <article class="luma-spotlight">
-          <span class="luma-badge">Project 02</span>
-          <h3>订单或电商系统</h3>
-          <p>库存、下单、支付回调、消息通知、缓存和事务，适合练分层设计与一致性处理。</p>
-        </article>
-      </div>
-
-      <div class="luma-note-grid">
-        <article class="luma-note-card">
-          <h3>工具链也要一起练</h3>
-          <p>Maven、Git、Docker、日志与监控，不是加分项，而是工程能力的组成部分。</p>
-        </article>
-        <article class="luma-note-card">
-          <h3>排障能力拉开差距</h3>
-          <p>会看堆栈、查慢 SQL、看线程状态、读日志，才能从“能写”走到“能扛事”。</p>
-        </article>
-      </div>
     </section>
+</body>
 
-    <section class="luma-panel" id="java-roadmap" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">ROADMAP</span>
-          <h2>一条更像工程师成长的路线</h2>
-        </div>
-        <div class="luma-section-copy">
-          <p>不是资料越多越好，而是每个阶段都知道自己该产出什么。</p>
-          <a class="luma-section-action" href="/java/roadmap/">进入资料页</a>
-        </div>
-      </div>
-
-      <div class="luma-timeline">
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 1-2</span>
-          <h3>语法、OOP、集合</h3>
-          <p>建立语言手感，写出结构正确、可读性过关的代码。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 3-5</span>
-          <h3>并发、JVM、调试</h3>
-          <p>开始理解运行原理，也开始学会如何定位问题。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 6-9</span>
-          <h3>Spring Boot、数据库</h3>
-          <p>做出一个真正可用的后端服务，建立接口、持久化和配置管理思维。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 10-12</span>
-          <h3>缓存、消息、部署</h3>
-          <p>系统复杂度提升后，工程能力会开始明显分层。</p>
-        </article>
-      </div>
-    </section>
-  </div>
-</div>
-
-<style>
-.luma-page {
-  --luma-text: #132238;
-  --luma-muted: #5c6f87;
-  --luma-border: rgba(112, 163, 255, 0.18);
-  --luma-white: rgba(255, 255, 255, 0.78);
-  --luma-shadow: 0 24px 60px rgba(114, 142, 255, 0.14);
-  margin: -1rem -1rem 0;
-  padding: 24px;
-  color: var(--luma-text);
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 8% 12%, rgba(96, 225, 186, 0.24), transparent 24%),
-    radial-gradient(circle at 92% 10%, rgba(113, 162, 255, 0.28), transparent 24%),
-    linear-gradient(180deg, #fbfeff 0%, #eff7ff 54%, #f7fbff 100%);
-  overflow: hidden;
-}
-
-.luma-page * {
-  box-sizing: border-box;
-}
-
-.luma-page a {
-  color: inherit !important;
-  text-decoration: none;
-}
-
-.luma-hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.9fr);
-  gap: 24px;
-  padding: 38px;
-  border-radius: 30px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.68)),
-    linear-gradient(135deg, rgba(120, 255, 214, 0.14), rgba(121, 154, 255, 0.14));
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  box-shadow: var(--luma-shadow);
-  backdrop-filter: blur(18px);
-  overflow: hidden;
-}
-
-.luma-hero__halo {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  filter: blur(12px);
-  opacity: 0.9;
-}
-
-.luma-hero__halo--left {
-  left: -120px;
-  top: -120px;
-  background: radial-gradient(circle, rgba(85, 232, 178, 0.34), transparent 66%);
-}
-
-.luma-hero__halo--right {
-  right: -100px;
-  top: -80px;
-  background: radial-gradient(circle, rgba(116, 149, 255, 0.30), transparent 68%);
-}
-
-.luma-hero__content,
-.luma-hero__orbit {
-  position: relative;
-  z-index: 1;
-}
-
-.luma-kicker,
-.luma-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #1d6d73;
-  background: rgba(97, 241, 199, 0.14);
-  border: 1px solid rgba(97, 241, 199, 0.32);
-}
-
-.luma-title {
-  margin: 18px 0 14px;
-  font-size: clamp(36px, 5vw, 58px);
-  line-height: 1.02;
-  letter-spacing: -0.05em;
-  color: #142640;
-}
-
-.luma-subtitle {
-  margin: 0;
-  max-width: 760px;
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--luma-muted);
-}
-
-.luma-pill-row,
-.luma-highlight-row,
-.luma-tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.luma-pill-row {
-  margin-top: 24px;
-}
-
-.luma-highlight-row {
-  margin-top: 22px;
-}
-
-.luma-pill,
-.luma-tag-row span {
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 13px;
-  color: #27405f;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(122, 150, 255, 0.16);
-}
-
-.luma-highlight {
-  min-width: 180px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(122, 150, 255, 0.14);
-}
-
-.luma-highlight strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.luma-highlight span,
-.luma-orbit-card p,
-.luma-card p,
-.luma-flow-card p,
-.luma-spotlight p,
-.luma-note-card p,
-.luma-timeline-card p,
-.luma-section-head p {
-  color: var(--luma-muted);
-  line-height: 1.8;
-}
-
-.luma-hero__orbit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.luma-orbit-card {
-  position: relative;
-  width: 100%;
-  padding: 26px;
-  border-radius: 30px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(237, 248, 255, 0.86));
-  border: 1px solid rgba(122, 150, 255, 0.16);
-  box-shadow: 0 18px 50px rgba(103, 164, 255, 0.15);
-}
-
-.luma-orbit-card__label {
-  display: inline-flex;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #6f56ff;
-  background: rgba(140, 122, 255, 0.10);
-}
-
-.luma-orbit-card strong {
-  display: block;
-  margin: 16px 0 10px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.luma-orbit-glow {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  right: 10%;
-  bottom: -60px;
-  background: radial-gradient(circle, rgba(91, 229, 190, 0.36), transparent 62%);
-  filter: blur(8px);
-  pointer-events: none;
-}
-
-.luma-tabs {
-  position: sticky;
-  top: 78px;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 22px;
-  padding: 14px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(122, 150, 255, 0.14);
-  box-shadow: 0 14px 35px rgba(112, 163, 255, 0.12);
-  backdrop-filter: blur(18px);
-}
-
-.luma-tab {
-  padding: 12px 18px;
-  border: 0;
-  border-radius: 14px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #4f6686;
-  background: transparent;
-  transition: 0.25s ease;
-}
-
-.luma-tab:hover,
-.luma-tab.is-active {
-  color: #fff;
-  background: linear-gradient(135deg, #53d9bf, #6b7cff);
-  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.24);
-}
-
-.luma-panel {
-  display: none;
-  padding-top: 26px;
-  animation: lumaFade 0.35s ease;
-}
-
-.luma-panel.is-active {
-  display: block;
-}
-
-@keyframes lumaFade {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.luma-section-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-  gap: 20px;
-  align-items: end;
-  margin-bottom: 22px;
-}
-
-.luma-section-copy {
-  display: grid;
-  gap: 14px;
-  justify-items: start;
-}
-
-.luma-section-head h2,
-.luma-card h3,
-.luma-flow-card h3,
-.luma-spotlight h3,
-.luma-note-card h3,
-.luma-timeline-card h3 {
-  margin: 14px 0 8px;
-  color: #172840;
-}
-
-.luma-card-grid,
-.luma-flow-grid,
-.luma-dual-grid,
-.luma-note-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.luma-card,
-.luma-flow-card,
-.luma-spotlight,
-.luma-note-card,
-.luma-timeline-card {
-  padding: 22px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--luma-border);
-  box-shadow: 0 18px 40px rgba(123, 154, 255, 0.10);
-}
-
-.luma-section-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 132px;
-  padding: 12px 18px;
-  border-radius: 999px;
-  color: #fff !important;
-  font-size: 14px;
-  font-weight: 600;
-  background: linear-gradient(135deg, #53d9bf, #6b7cff);
-  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.22);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.luma-section-action:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 28px rgba(101, 131, 255, 0.28);
-}
-
-.luma-card--feature,
-.luma-spotlight {
-  background:
-    linear-gradient(135deg, rgba(88, 228, 190, 0.12), rgba(112, 136, 255, 0.10)),
-    rgba(255, 255, 255, 0.88);
-}
-
-.luma-badge {
-  display: inline-flex;
-  padding: 6px 11px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #6d54ff;
-  background: rgba(140, 122, 255, 0.10);
-}
-
-.luma-flow-card,
-.luma-timeline-card {
-  position: relative;
-}
-
-.luma-index,
-.luma-step {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 84px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #1f7f87;
-  background: rgba(96, 225, 186, 0.12);
-}
-
-.luma-timeline {
-  display: grid;
-  gap: 16px;
-}
-
-@media (max-width: 900px) {
-  .luma-page {
-    margin: -1rem 0 0;
-    padding: 16px;
-    border-radius: 20px;
-  }
-
-  .luma-hero,
-  .luma-section-head,
-  .luma-card-grid,
-  .luma-flow-grid,
-  .luma-dual-grid,
-  .luma-note-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .luma-hero {
-    padding: 26px;
-  }
-
-  .luma-tabs {
-    top: 64px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-
-  .luma-tab {
-    white-space: nowrap;
-  }
-}
-</style>
-
-<script>
-(function() {
-  function initLumaTabs() {
-    document.querySelectorAll('[data-luma-tabs]').forEach(function(tabbar) {
-      var page = tabbar.closest('.luma-page');
-      if (!page || page.dataset.lumaReady === 'true') return;
-      page.dataset.lumaReady = 'true';
-
-      var tabs = tabbar.querySelectorAll('[data-tab-target]');
-      var panels = page.querySelectorAll('[data-tab-panel]');
-
-      tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-          var target = tab.getAttribute('data-tab-target');
-          tabs.forEach(function(item) { item.classList.remove('is-active'); });
-          panels.forEach(function(panel) { panel.classList.remove('is-active'); });
-
-          tab.classList.add('is-active');
-          var panel = page.querySelector('#' + target);
-          if (panel) panel.classList.add('is-active');
-
-          window.scrollTo({
-            top: tabbar.getBoundingClientRect().top + window.scrollY - 90,
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  }
-
-  initLumaTabs();
-  document.addEventListener('DOMContentLoaded', initLumaTabs);
-  document.addEventListener('pjax:complete', initLumaTabs);
-})();
-</script>
+</html>
