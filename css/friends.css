@@ -1,6 +1,6 @@
 /* 路标亭 · 友链页 */
 
-#page > .page-title,
+#page>.page-title,
 #article-container .page-title {
   display: none;
 }
@@ -9,7 +9,7 @@
   margin: 0 0 32px;
 }
 
-#article-container .flink > h2,
+#article-container .flink>h2,
 #article-container .flink .flink-desc {
   display: none;
 }
@@ -27,7 +27,7 @@
 
 #article-container .site-card {
   display: grid;
-  grid-template-columns: 52px 1fr auto;
+  grid-template-columns: 52px 1fr;
   gap: 16px;
   align-items: center;
   padding: 18px 20px;
@@ -38,6 +38,7 @@
   box-shadow: none;
   min-height: 0;
   transition: background 0.2s ease;
+  justify-items: start;
 }
 
 #article-container .site-card:last-child {
@@ -52,6 +53,7 @@
   transform: none;
   background: rgba(0, 209, 255, 0.05);
   box-shadow: none;
+  width: 100%;
 }
 
 #article-container .site-card .img {
@@ -63,7 +65,7 @@
   padding: 0;
 }
 
-#article-container .site-card .info > img {
+#article-container .site-card .info>img {
   grid-column: 1;
   grid-row: 1 / span 2;
   width: 52px;
@@ -116,9 +118,9 @@
   font-size: 0.92em;
 }
 
-  margin: 0 0 28px;
-  padding-left: 18px;
-  border-left: 3px solid var(--theme-color, #00d1ff);
+margin: 0 0 28px;
+padding-left: 18px;
+border-left: 3px solid var(--theme-color, #00d1ff);
 }
 
 .flk-intro__tag {
@@ -154,7 +156,7 @@
   background: rgba(0, 209, 255, 0.03);
 }
 
-.flk-charter > summary {
+.flk-charter>summary {
   padding: 14px 18px;
   font-size: 15px;
   font-weight: 600;
@@ -163,16 +165,16 @@
   color: var(--font-color, #1a2a3a);
 }
 
-.flk-charter > summary::-webkit-details-marker {
+.flk-charter>summary::-webkit-details-marker {
   display: none;
 }
 
-.flk-charter > summary::before {
+.flk-charter>summary::before {
   content: "▸ ";
   color: var(--theme-color, #00d1ff);
 }
 
-.flk-charter[open] > summary::before {
+.flk-charter[open]>summary::before {
   content: "▾ ";
 }
 
@@ -233,7 +235,7 @@
 }
 
 .flk-write__head p,
-.flk-clip > p {
+.flk-clip>p {
   margin: 0 0 18px;
   font-size: 14px;
   line-height: 1.7;

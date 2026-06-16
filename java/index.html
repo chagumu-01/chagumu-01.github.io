@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Java资料 | chagumu's blog</title><meta name="keywords" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,chagumu's blog"><meta name="author" content="chagumu's blog"><meta name="copyright" content="chagumu's blog"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0b1020"><meta name="description" content="JAVA ENGINEERING       Java 学习资料中心       用更像官网的方式重组 Java 学习路径：先看清底层，再进入企业栈，最后走到项目和工程能力，而不是把知识点堆成一面长墙。                JVM         Spring Boot         MyBatis         Redis">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>chagumu's blog | chagumu's blog</title><meta name="keywords" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,chagumu's blog"><meta name="author" content="chagumu's blog"><meta name="copyright" content="chagumu's blog"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0b1020"><meta name="description" content="Java资料中心                   * {             margin: 0;             padding: 0;             box-sizing: border-box;         }          :root {             --primary: #f97316;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Java资料">
+<meta property="og:title" content="chagumu&#39;s blog">
 <meta property="og:url" content="https://chagumu.site/java/index.html">
 <meta property="og:site_name" content="chagumu&#39;s blog">
-<meta property="og:description" content="JAVA ENGINEERING       Java 学习资料中心       用更像官网的方式重组 Java 学习路径：先看清底层，再进入企业栈，最后走到项目和工程能力，而不是把知识点堆成一面长墙。                JVM         Spring Boot         MyBatis         Redis">
+<meta property="og:description" content="Java资料中心                   * {             margin: 0;             padding: 0;             box-sizing: border-box;         }          :root {             --primary: #f97316;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ibb.co/x8t513LV">
-<meta property="article:published_time" content="2026-03-24T11:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-30T02:11:20.117Z">
+<meta property="article:published_time" content="2026-06-16T12:37:41.909Z">
+<meta property="article:modified_time" content="2026-06-16T12:37:41.909Z">
 <meta property="article:author" content="chagumu&#39;s blog">
 <meta property="article:tag" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,chagumu&#39;s blog">
 <meta name="twitter:card" content="summary">
@@ -48,12 +48,12 @@
   islazyload: false,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Java资料',
+  title: 'chagumu\'s blog',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-04-30 10:11:20'
+  postUpdate: '2026-06-16 20:37:41'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -147,633 +147,460 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><script src="https://cdn.jsdelivr.net/npm/echarts@6/dist/echarts.min.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="chagumu's blog" type="application/atom+xml">
-</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/assets/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/friends/"><i class="fa-fw fas fa-link faa-tada"></i><span class="menu_word" style="font-size:17px"> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train-subway faa-tada"></i><span class="menu_word" style="font-size:17px"> 开往</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane"></use></svg><span class="menu_word" style="font-size:17px"> 自述</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 资源</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/java/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-javascript">                   </use></svg><span class="menu_word" style="font-size:17px"> Java资料</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/ai/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-ai">                   </use></svg><span class="menu_word" style="font-size:17px"> 大模型资料</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">chagumu's blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/friends/"><i class="fa-fw fas fa-link faa-tada"></i><span class="menu_word" style="font-size:17px"> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train-subway faa-tada"></i><span class="menu_word" style="font-size:17px"> 开往</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane"></use></svg><span class="menu_word" style="font-size:17px"> 自述</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 资源</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/java/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-javascript">                   </use></svg><span class="menu_word" style="font-size:17px"> Java资料</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/ai/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-ai">                   </use></svg><span class="menu_word" style="font-size:17px"> 大模型资料</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="page"><h1 class="page-title">Java资料</h1><div id="article-container">
-<div class="luma-page luma-page--java">
-  <section class="luma-hero">
-    <div class="luma-hero__halo luma-hero__halo--left"></div>
-    <div class="luma-hero__halo luma-hero__halo--right"></div>
-    <div class="luma-hero__content">
-      <span class="luma-kicker">JAVA ENGINEERING</span>
-      <h1 class="luma-title">Java 学习资料中心</h1>
-      <p class="luma-subtitle">用更像官网的方式重组 Java 学习路径：先看清底层，再进入企业栈，最后走到项目和工程能力，而不是把知识点堆成一面长墙。</p>
-      <div class="luma-pill-row">
-        <span class="luma-pill">JVM</span>
-        <span class="luma-pill">Spring Boot</span>
-        <span class="luma-pill">MyBatis</span>
-        <span class="luma-pill">Redis</span>
-      </div>
-      <div class="luma-highlight-row">
-        <article class="luma-highlight">
-          <strong>4 大模块</strong>
-          <span>基础、企业栈、实战、路线</span>
-        </article>
-        <article class="luma-highlight">
-          <strong>12 周路径</strong>
-          <span>从入门到能交付项目</span>
-        </article>
-      </div>
-    </div>
-    <div class="luma-hero__orbit">
-      <div class="luma-orbit-card">
-        <span class="luma-orbit-card__label">核心认知</span>
-        <strong>先理解，再刷题</strong>
-        <p>不是记 API，而是看懂语言设计、运行机制和工程协作。</p>
-      </div>
-      <div class="luma-orbit-glow"></div>
-    </div>
-  </section>
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/assets/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/friends/"><i class="fa-fw fas fa-link faa-tada"></i><span class="menu_word" style="font-size:17px"> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train-subway faa-tada"></i><span class="menu_word" style="font-size:17px"> 开往</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane"></use></svg><span class="menu_word" style="font-size:17px"> 自述</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 资源</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/java/core/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-javascript">                   </use></svg><span class="menu_word" style="font-size:17px"> Java资料</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/ai/path/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-ai">                   </use></svg><span class="menu_word" style="font-size:17px"> 大模型资料</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">chagumu's blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/friends/"><i class="fa-fw fas fa-link faa-tada"></i><span class="menu_word" style="font-size:17px"> 友链</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" target="_blank" rel="noopener" href="https://www.travellings.cn/go.html"><i class="fa-fw fas fa-train-subway faa-tada"></i><span class="menu_word" style="font-size:17px"> 开往</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane"></use></svg><span class="menu_word" style="font-size:17px"> 自述</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 资源</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/java/core/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-javascript">                   </use></svg><span class="menu_word" style="font-size:17px"> Java资料</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/ai/path/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-ai">                   </use></svg><span class="menu_word" style="font-size:17px"> 大模型资料</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="page-site-info"><h1 id="site-title">chagumu's blog</h1></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html lang="zh-CN">
 
-  <div class="luma-tabs" data-luma-tabs="java">
-    <button class="luma-tab is-active" type="button" data-tab-target="java-core">基础内核</button>
-    <button class="luma-tab" type="button" data-tab-target="java-stack">企业栈</button>
-    <button class="luma-tab" type="button" data-tab-target="java-practice">实战项目</button>
-    <button class="luma-tab" type="button" data-tab-target="java-roadmap">成长路线</button>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java资料中心</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <div class="luma-panels">
-    <section class="luma-panel is-active" id="java-core" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">CORE LAYER</span>
-          <h2>先把底座打稳，后面每一层才不会虚</h2>
+        :root {
+            --primary: #f97316;
+            --primary-dark: #ea580c;
+            --secondary: #fb923c;
+            --accent: #fed7aa;
+            --text-dark: #1c1917;
+            --text-light: #57534e;
+            --bg-light: #fff7ed;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+        }
+
+        .java-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            overflow: hidden;
+        }
+
+        .java-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-60px);
+            }
+        }
+
+        .java-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .java-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .java-title {
+            font-size: clamp(36px, 8vw, 72px);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.2;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .java-subtitle {
+            font-size: clamp(16px, 2vw, 20px);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .java-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .java-stat {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-width: 150px;
+        }
+
+        .java-stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--white);
+            display: block;
+        }
+
+        .java-stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 8px;
+        }
+
+        .java-cards {
+            max-width: 1200px;
+            margin: -60px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .java-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .java-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .java-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .java-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .java-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .java-card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+        }
+
+        .java-card:nth-child(2) .java-card-icon {
+            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+        }
+
+        .java-card:nth-child(3) .java-card-icon {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .java-card:nth-child(4) .java-card-icon {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .java-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .java-card-desc {
+            font-size: 15px;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .java-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 15px;
+            transition: gap 0.3s ease;
+        }
+
+        .java-card:hover .java-card-link {
+            gap: 14px;
+        }
+
+        .java-features {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 60px 20px;
+        }
+
+        .java-features-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--white);
+            margin-bottom: 50px;
+        }
+
+        .java-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .java-feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .java-feature-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .java-feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .java-feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .java-feature-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .java-stats {
+                gap: 20px;
+            }
+
+            .java-stat {
+                min-width: 120px;
+                padding: 15px;
+            }
+
+            .java-stat-number {
+                font-size: 28px;
+            }
+
+            .java-cards {
+                margin-top: -40px;
+            }
+
+            .java-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="java-hero">
+        <div class="java-hero-content">
+            <div class="java-badge">
+                <i class="fab fa-java"></i> Java Engineering
+            </div>
+            <h1 class="java-title">Java学习资料中心</h1>
+            <p class="java-subtitle">
+                从基础内核到企业级开发，用系统化的方式掌握Java技术栈，打造扎实的工程能力
+            </p>
+            <div class="java-stats">
+                <div class="java-stat">
+                    <span class="java-stat-number">100+</span>
+                    <span class="java-stat-label">学习资料</span>
+                </div>
+                <div class="java-stat">
+                    <span class="java-stat-number">50+</span>
+                    <span class="java-stat-label">实战项目</span>
+                </div>
+                <div class="java-stat">
+                    <span class="java-stat-number">20+</span>
+                    <span class="java-stat-label">框架教程</span>
+                </div>
+            </div>
         </div>
-        <div class="luma-section-copy">
-          <p>这部分重点不是“看过”，而是能解释清楚为什么这样写、这样运行、这样设计。</p>
-          <a class="luma-section-action" href="/java/core/">进入资料页</a>
-        </div>
-      </div>
-
-      <div class="luma-card-grid">
-        <article class="luma-card luma-card--feature">
-          <span class="luma-badge">Language</span>
-          <h3>语法与面向对象</h3>
-          <p>变量、流程控制、封装、继承、多态、接口与泛型，是 Java 表达能力的第一层。</p>
-          <div class="luma-tag-row">
-            <span>OOP</span>
-            <span>泛型</span>
-            <span>异常</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">Collections</span>
-          <h3>集合与常用 API</h3>
-          <p>ArrayList、HashMap、Set、Stream、Optional，这决定你日常代码是不是顺手且清晰。</p>
-          <div class="luma-tag-row">
-            <span>Map</span>
-            <span>Stream</span>
-            <span>Lambda</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">Concurrency</span>
-          <h3>并发与线程模型</h3>
-          <p>线程池、锁、CAS、可见性和有序性，是服务是否扛压的关键分水岭。</p>
-          <div class="luma-tag-row">
-            <span>JUC</span>
-            <span>Lock</span>
-            <span>ThreadPool</span>
-          </div>
-        </article>
-        <article class="luma-card">
-          <span class="luma-badge">JVM</span>
-          <h3>JVM 运行机制</h3>
-          <p>类加载、内存结构、垃圾回收和调优，是从“会写”走向“会查问题”的关键一步。</p>
-          <div class="luma-tag-row">
-            <span>GC</span>
-            <span>ClassLoader</span>
-            <span>调优</span>
-          </div>
-        </article>
-      </div>
     </section>
 
-    <section class="luma-panel" id="java-stack" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">ENTERPRISE STACK</span>
-          <h2>企业开发不是框架清单，而是一条职责链</h2>
-        </div>
-        <div class="luma-section-copy">
-          <p>把常用组件按“写服务时到底负责什么”拆开，比按名字背诵更有价值。</p>
-          <a class="luma-section-action" href="/java/stack/">进入资料页</a>
-        </div>
-      </div>
+    <section class="java-cards">
+        <div class="java-card-grid">
+            <a href="/java/core/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3 class="java-card-title">基础内核资料</h3>
+                <p class="java-card-desc">Java核心知识点整理，包括JVM、并发、集合框架等底层原理</p>
+                <span class="java-card-link">
+                    开始学习 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
 
-      <div class="luma-flow-grid">
-        <article class="luma-flow-card">
-          <span class="luma-index">01</span>
-          <h3>Spring / Spring Boot</h3>
-          <p>IoC、AOP、自动配置和 Starter 机制，是现代 Java 服务开发的核心框架层。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">02</span>
-          <h3>数据库与持久层</h3>
-          <p>MyBatis、事务、连接池、SQL 调优，决定服务是否稳定且可维护。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">03</span>
-          <h3>缓存与消息队列</h3>
-          <p>Redis、MQ、削峰填谷、异步解耦，是业务复杂后绕不开的常见模块。</p>
-        </article>
-        <article class="luma-flow-card">
-          <span class="luma-index">04</span>
-          <h3>微服务与治理</h3>
-          <p>服务发现、配置中心、网关、限流熔断和链路追踪，让系统开始真正成型。</p>
-        </article>
-      </div>
+            <a href="/java/stack/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="java-card-title">技术栈资料</h3>
+                <p class="java-card-desc">主流Java技术栈学习指南，包括Spring、MyBatis、Redis等</p>
+                <span class="java-card-link">
+                    查看详情 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+
+            <a href="/java/roadmap/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3 class="java-card-title">学习路线图</h3>
+                <p class="java-card-desc">从入门到高级的系统化学习路径和阶段目标</p>
+                <span class="java-card-link">
+                    规划路线 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+
+            <a href="/java/practice/" class="java-card">
+                <div class="java-card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="java-card-title">实战项目资料</h3>
+                <p class="java-card-desc">真实企业项目案例，从需求分析到上线部署全流程</p>
+                <span class="java-card-link">
+                    参与项目 <i class="fas fa-arrow-right"></i>
+                </span>
+            </a>
+        </div>
     </section>
 
-    <section class="luma-panel" id="java-practice" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">PROJECT MODE</span>
-          <h2>让知识落地的最快方式，是做能讲得清楚的项目</h2>
+    <section class="java-features">
+        <h2 class="java-features-title">
+            <i class="fas fa-star"></i> 学习特色
+        </h2>
+        <div class="java-feature-grid">
+            <div class="java-feature-item">
+                <div class="java-feature-icon">🔍</div>
+                <h3 class="java-feature-title">原理剖析</h3>
+                <p class="java-feature-desc">深入理解底层原理，不做只会调API的码农</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">💻</div>
+                <h3 class="java-feature-title">代码实战</h3>
+                <p class="java-feature-desc">每个知识点都配有完整代码示例</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">📈</div>
+                <h3 class="java-feature-title">循序渐进</h3>
+                <p class="java-feature-desc">从基础到高级，稳扎稳打的学习路径</p>
+            </div>
+            <div class="java-feature-item">
+                <div class="java-feature-icon">🤝</div>
+                <h3 class="java-feature-title">经验分享</h3>
+                <p class="java-feature-desc">汇集前辈们的学习经验和面试技巧</p>
+            </div>
         </div>
-        <div class="luma-section-copy">
-          <p>项目不必多，但要能把模块关系、设计取舍和故障处理讲清楚。</p>
-          <a class="luma-section-action" href="/java/practice/">进入资料页</a>
-        </div>
-      </div>
-
-      <div class="luma-dual-grid">
-        <article class="luma-spotlight">
-          <span class="luma-badge">Project 01</span>
-          <h3>后台管理系统</h3>
-          <p>用户、角色、权限、菜单、日志、认证，适合把 Spring Boot、JWT、RBAC 串起来。</p>
-        </article>
-        <article class="luma-spotlight">
-          <span class="luma-badge">Project 02</span>
-          <h3>订单或电商系统</h3>
-          <p>库存、下单、支付回调、消息通知、缓存和事务，适合练分层设计与一致性处理。</p>
-        </article>
-      </div>
-
-      <div class="luma-note-grid">
-        <article class="luma-note-card">
-          <h3>工具链也要一起练</h3>
-          <p>Maven、Git、Docker、日志与监控，不是加分项，而是工程能力的组成部分。</p>
-        </article>
-        <article class="luma-note-card">
-          <h3>排障能力拉开差距</h3>
-          <p>会看堆栈、查慢 SQL、看线程状态、读日志，才能从“能写”走到“能扛事”。</p>
-        </article>
-      </div>
     </section>
+<!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><a class="magnet_link_more"  href="https://chagumu.site/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
 
-    <section class="luma-panel" id="java-roadmap" data-tab-panel>
-      <div class="luma-section-head">
-        <div>
-          <span class="luma-eyebrow">ROADMAP</span>
-          <h2>一条更像工程师成长的路线</h2>
-        </div>
-        <div class="luma-section-copy">
-          <p>不是资料越多越好，而是每个阶段都知道自己该产出什么。</p>
-          <a class="luma-section-action" href="/java/roadmap/">进入资料页</a>
-        </div>
-      </div>
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?chagumu-01",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'chagumu-01')
+    }
+  </script><!-- hexo injector body_end end --></body>
 
-      <div class="luma-timeline">
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 1-2</span>
-          <h3>语法、OOP、集合</h3>
-          <p>建立语言手感，写出结构正确、可读性过关的代码。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 3-5</span>
-          <h3>并发、JVM、调试</h3>
-          <p>开始理解运行原理，也开始学会如何定位问题。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 6-9</span>
-          <h3>Spring Boot、数据库</h3>
-          <p>做出一个真正可用的后端服务，建立接口、持久化和配置管理思维。</p>
-        </article>
-        <article class="luma-timeline-card">
-          <span class="luma-step">WEEK 10-12</span>
-          <h3>缓存、消息、部署</h3>
-          <p>系统复杂度提升后，工程能力会开始明显分层。</p>
-        </article>
-      </div>
-    </section>
-  </div>
-</div>
-
-<style>
-.luma-page {
-  --luma-text: #132238;
-  --luma-muted: #5c6f87;
-  --luma-border: rgba(112, 163, 255, 0.18);
-  --luma-white: rgba(255, 255, 255, 0.78);
-  --luma-shadow: 0 24px 60px rgba(114, 142, 255, 0.14);
-  margin: -1rem -1rem 0;
-  padding: 24px;
-  color: var(--luma-text);
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 8% 12%, rgba(96, 225, 186, 0.24), transparent 24%),
-    radial-gradient(circle at 92% 10%, rgba(113, 162, 255, 0.28), transparent 24%),
-    linear-gradient(180deg, #fbfeff 0%, #eff7ff 54%, #f7fbff 100%);
-  overflow: hidden;
-}
-
-.luma-page * {
-  box-sizing: border-box;
-}
-
-.luma-page a {
-  color: inherit !important;
-  text-decoration: none;
-}
-
-.luma-hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.9fr);
-  gap: 24px;
-  padding: 38px;
-  border-radius: 30px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.68)),
-    linear-gradient(135deg, rgba(120, 255, 214, 0.14), rgba(121, 154, 255, 0.14));
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  box-shadow: var(--luma-shadow);
-  backdrop-filter: blur(18px);
-  overflow: hidden;
-}
-
-.luma-hero__halo {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  filter: blur(12px);
-  opacity: 0.9;
-}
-
-.luma-hero__halo--left {
-  left: -120px;
-  top: -120px;
-  background: radial-gradient(circle, rgba(85, 232, 178, 0.34), transparent 66%);
-}
-
-.luma-hero__halo--right {
-  right: -100px;
-  top: -80px;
-  background: radial-gradient(circle, rgba(116, 149, 255, 0.30), transparent 68%);
-}
-
-.luma-hero__content,
-.luma-hero__orbit {
-  position: relative;
-  z-index: 1;
-}
-
-.luma-kicker,
-.luma-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #1d6d73;
-  background: rgba(97, 241, 199, 0.14);
-  border: 1px solid rgba(97, 241, 199, 0.32);
-}
-
-.luma-title {
-  margin: 18px 0 14px;
-  font-size: clamp(36px, 5vw, 58px);
-  line-height: 1.02;
-  letter-spacing: -0.05em;
-  color: #142640;
-}
-
-.luma-subtitle {
-  margin: 0;
-  max-width: 760px;
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--luma-muted);
-}
-
-.luma-pill-row,
-.luma-highlight-row,
-.luma-tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.luma-pill-row {
-  margin-top: 24px;
-}
-
-.luma-highlight-row {
-  margin-top: 22px;
-}
-
-.luma-pill,
-.luma-tag-row span {
-  padding: 10px 14px;
-  border-radius: 999px;
-  font-size: 13px;
-  color: #27405f;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(122, 150, 255, 0.16);
-}
-
-.luma-highlight {
-  min-width: 180px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(122, 150, 255, 0.14);
-}
-
-.luma-highlight strong {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.luma-highlight span,
-.luma-orbit-card p,
-.luma-card p,
-.luma-flow-card p,
-.luma-spotlight p,
-.luma-note-card p,
-.luma-timeline-card p,
-.luma-section-head p {
-  color: var(--luma-muted);
-  line-height: 1.8;
-}
-
-.luma-hero__orbit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.luma-orbit-card {
-  position: relative;
-  width: 100%;
-  padding: 26px;
-  border-radius: 30px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(237, 248, 255, 0.86));
-  border: 1px solid rgba(122, 150, 255, 0.16);
-  box-shadow: 0 18px 50px rgba(103, 164, 255, 0.15);
-}
-
-.luma-orbit-card__label {
-  display: inline-flex;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #6f56ff;
-  background: rgba(140, 122, 255, 0.10);
-}
-
-.luma-orbit-card strong {
-  display: block;
-  margin: 16px 0 10px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.luma-orbit-glow {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  right: 10%;
-  bottom: -60px;
-  background: radial-gradient(circle, rgba(91, 229, 190, 0.36), transparent 62%);
-  filter: blur(8px);
-  pointer-events: none;
-}
-
-.luma-tabs {
-  position: sticky;
-  top: 78px;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 22px;
-  padding: 14px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(122, 150, 255, 0.14);
-  box-shadow: 0 14px 35px rgba(112, 163, 255, 0.12);
-  backdrop-filter: blur(18px);
-}
-
-.luma-tab {
-  padding: 12px 18px;
-  border: 0;
-  border-radius: 14px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #4f6686;
-  background: transparent;
-  transition: 0.25s ease;
-}
-
-.luma-tab:hover,
-.luma-tab.is-active {
-  color: #fff;
-  background: linear-gradient(135deg, #53d9bf, #6b7cff);
-  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.24);
-}
-
-.luma-panel {
-  display: none;
-  padding-top: 26px;
-  animation: lumaFade 0.35s ease;
-}
-
-.luma-panel.is-active {
-  display: block;
-}
-
-@keyframes lumaFade {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.luma-section-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
-  gap: 20px;
-  align-items: end;
-  margin-bottom: 22px;
-}
-
-.luma-section-copy {
-  display: grid;
-  gap: 14px;
-  justify-items: start;
-}
-
-.luma-section-head h2,
-.luma-card h3,
-.luma-flow-card h3,
-.luma-spotlight h3,
-.luma-note-card h3,
-.luma-timeline-card h3 {
-  margin: 14px 0 8px;
-  color: #172840;
-}
-
-.luma-card-grid,
-.luma-flow-grid,
-.luma-dual-grid,
-.luma-note-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.luma-card,
-.luma-flow-card,
-.luma-spotlight,
-.luma-note-card,
-.luma-timeline-card {
-  padding: 22px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--luma-border);
-  box-shadow: 0 18px 40px rgba(123, 154, 255, 0.10);
-}
-
-.luma-section-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 132px;
-  padding: 12px 18px;
-  border-radius: 999px;
-  color: #fff !important;
-  font-size: 14px;
-  font-weight: 600;
-  background: linear-gradient(135deg, #53d9bf, #6b7cff);
-  box-shadow: 0 12px 24px rgba(101, 131, 255, 0.22);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.luma-section-action:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 28px rgba(101, 131, 255, 0.28);
-}
-
-.luma-card--feature,
-.luma-spotlight {
-  background:
-    linear-gradient(135deg, rgba(88, 228, 190, 0.12), rgba(112, 136, 255, 0.10)),
-    rgba(255, 255, 255, 0.88);
-}
-
-.luma-badge {
-  display: inline-flex;
-  padding: 6px 11px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #6d54ff;
-  background: rgba(140, 122, 255, 0.10);
-}
-
-.luma-flow-card,
-.luma-timeline-card {
-  position: relative;
-}
-
-.luma-index,
-.luma-step {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 84px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #1f7f87;
-  background: rgba(96, 225, 186, 0.12);
-}
-
-.luma-timeline {
-  display: grid;
-  gap: 16px;
-}
-
-@media (max-width: 900px) {
-  .luma-page {
-    margin: -1rem 0 0;
-    padding: 16px;
-    border-radius: 20px;
-  }
-
-  .luma-hero,
-  .luma-section-head,
-  .luma-card-grid,
-  .luma-flow-grid,
-  .luma-dual-grid,
-  .luma-note-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .luma-hero {
-    padding: 26px;
-  }
-
-  .luma-tabs {
-    top: 64px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-
-  .luma-tab {
-    white-space: nowrap;
-  }
-}
-</style>
-
-<script>
-(function() {
-  function initLumaTabs() {
-    document.querySelectorAll('[data-luma-tabs]').forEach(function(tabbar) {
-      var page = tabbar.closest('.luma-page');
-      if (!page || page.dataset.lumaReady === 'true') return;
-      page.dataset.lumaReady = 'true';
-
-      var tabs = tabbar.querySelectorAll('[data-tab-target]');
-      var panels = page.querySelectorAll('[data-tab-panel]');
-
-      tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-          var target = tab.getAttribute('data-tab-target');
-          tabs.forEach(function(item) { item.classList.remove('is-active'); });
-          panels.forEach(function(panel) { panel.classList.remove('is-active'); });
-
-          tab.classList.add('is-active');
-          var panel = page.querySelector('#' + target);
-          if (panel) panel.classList.add('is-active');
-
-          window.scrollTo({
-            top: tabbar.getBoundingClientRect().top + window.scrollY - 90,
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  }
-
-  initLumaTabs();
-  document.addEventListener('DOMContentLoaded', initLumaTabs);
-  document.addEventListener('pjax:complete', initLumaTabs);
-})();
-</script>
-</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/assets/avatar.webp" onerror="this.onerror=null;this.src='/assets/r1.jpg'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><b><div class="author-info__name">chagumu's blog</div></b><div class="author-info__description">我并不想说</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.yuque.com/chagumu/sh3gmd" title="前往作者的Github"><span>学习路线</span><i class="faa-passing animated" style="padding-left:20px;display:inline-block;vertical-align:middle;"><svg class="icon" style="height:28px;width:28px;fill:currentColor;position:relative;top:5px"><use xlink:href="#icon-xiaoqiche"></use></svg></i></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="/assets/Wechat.jpg" target="_blank" title="微信"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weixin"></use></svg></a><a class="social-icon faa-parent animated-hover" href="/assets/QQ.jpg" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/3546706109008142?spm_id_from=333.1387.0.0" target="_blank" title="B站"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:3835385985@qq.com" target="_blank" title="QQ邮箱"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxiang"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://github.com/chagumu-01" target="_blank" title="github"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-github"></use></svg></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/b62370ab.html" title="AI Agent 开发的工业化道路：Harness 架构深度解析"><img src="/assets/harness.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="AI Agent 开发的工业化道路：Harness 架构深度解析"/></a><div class="content"><a class="title" href="/posts/b62370ab.html" title="AI Agent 开发的工业化道路：Harness 架构深度解析">AI Agent 开发的工业化道路：Harness 架构深度解析</a><time datetime="2026-05-25T14:08:16.000Z" title="发表于 2026-05-25 22:08:16">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/97b99e75.html" title="多模态AI完全指南"><img src="/assets/%E5%A4%9A%E6%A8%A1%E6%80%81.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="多模态AI完全指南"/></a><div class="content"><a class="title" href="/posts/97b99e75.html" title="多模态AI完全指南">多模态AI完全指南</a><time datetime="2026-05-25T14:06:01.000Z" title="发表于 2026-05-25 22:06:01">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72c7d7d8.html" title="微调——顾名思义"><img src="/assets/%E5%BE%AE%E8%B0%83.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="微调——顾名思义"/></a><div class="content"><a class="title" href="/posts/72c7d7d8.html" title="微调——顾名思义">微调——顾名思义</a><time datetime="2026-05-25T14:03:42.000Z" title="发表于 2026-05-25 22:03:42">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3be80767.html" title="从 LLM 到 RAG 再到 Agent：技术演进路径"><img src="/assets/%E4%BB%8E_LLM_%E5%88%B0_RAG_%E5%86%8D%E5%88%B0_Agent1.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="从 LLM 到 RAG 再到 Agent：技术演进路径"/></a><div class="content"><a class="title" href="/posts/3be80767.html" title="从 LLM 到 RAG 再到 Agent：技术演进路径">从 LLM 到 RAG 再到 Agent：技术演进路径</a><time datetime="2026-05-25T14:01:36.000Z" title="发表于 2026-05-25 22:01:36">2026-05-25</time></div></div></div></div><div class="card-widget card-webinfo"><div class="item-headline"><a class="faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true"><use xlink:href="#icon-shujutongji2"></use></svg></a><span style="font-weight:bold">小站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.2w</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-06-15T18:30:54.029Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">铭记</p><div class="bg-ad"><div>今虽苦劳，然若思未来之美好生活，亦自足以值此辛勤。人生岂非如此乎？</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://www.bilibili.com/">休息会</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/comments/">留点什么</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><!--.ft-item-2//p.ft-t 推荐友链⌛
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="card-info-avatar"><div class="avatar-img"><img src="/assets/avatar.webp" onerror="this.onerror=null;this.src='/assets/r1.jpg'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><b><div class="author-info__name">chagumu's blog</div></b><div class="author-info__description">我并不想说</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.yuque.com/chagumu/sh3gmd" title="前往作者的Github"><span>学习路线</span><i class="faa-passing animated" style="padding-left:20px;display:inline-block;vertical-align:middle;"><svg class="icon" style="height:28px;width:28px;fill:currentColor;position:relative;top:5px"><use xlink:href="#icon-xiaoqiche"></use></svg></i></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="/assets/Wechat.jpg" target="_blank" title="微信"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weixin"></use></svg></a><a class="social-icon faa-parent animated-hover" href="/assets/QQ.jpg" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/3546706109008142?spm_id_from=333.1387.0.0" target="_blank" title="B站"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:3835385985@qq.com" target="_blank" title="QQ邮箱"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxiang"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://github.com/chagumu-01" target="_blank" title="github"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-github"></use></svg></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/b62370ab.html" title="AI Agent 开发的工业化道路：Harness 架构深度解析"><img src="/assets/harness.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="AI Agent 开发的工业化道路：Harness 架构深度解析"/></a><div class="content"><a class="title" href="/posts/b62370ab.html" title="AI Agent 开发的工业化道路：Harness 架构深度解析">AI Agent 开发的工业化道路：Harness 架构深度解析</a><time datetime="2026-05-25T14:08:16.000Z" title="发表于 2026-05-25 22:08:16">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/97b99e75.html" title="多模态AI完全指南"><img src="/assets/%E5%A4%9A%E6%A8%A1%E6%80%81.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="多模态AI完全指南"/></a><div class="content"><a class="title" href="/posts/97b99e75.html" title="多模态AI完全指南">多模态AI完全指南</a><time datetime="2026-05-25T14:06:01.000Z" title="发表于 2026-05-25 22:06:01">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72c7d7d8.html" title="微调——顾名思义"><img src="/assets/%E5%BE%AE%E8%B0%83.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="微调——顾名思义"/></a><div class="content"><a class="title" href="/posts/72c7d7d8.html" title="微调——顾名思义">微调——顾名思义</a><time datetime="2026-05-25T14:03:42.000Z" title="发表于 2026-05-25 22:03:42">2026-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3be80767.html" title="从 LLM 到 RAG 再到 Agent：技术演进路径"><img src="/assets/%E4%BB%8E_LLM_%E5%88%B0_RAG_%E5%86%8D%E5%88%B0_Agent1.png" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="从 LLM 到 RAG 再到 Agent：技术演进路径"/></a><div class="content"><a class="title" href="/posts/3be80767.html" title="从 LLM 到 RAG 再到 Agent：技术演进路径">从 LLM 到 RAG 再到 Agent：技术演进路径</a><time datetime="2026-05-25T14:01:36.000Z" title="发表于 2026-05-25 22:01:36">2026-05-25</time></div></div></div></div><div class="card-widget card-webinfo"><div class="item-headline"><a class="faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true"><use xlink:href="#icon-shujutongji2"></use></svg></a><span style="font-weight:bold">小站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">11</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.2w</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-06-16T13:52:54.889Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">铭记</p><div class="bg-ad"><div>今虽苦劳，然若思未来之美好生活，亦自足以值此辛勤。人生岂非如此乎？</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://www.bilibili.com/">休息会</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/comments/">留点什么</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><!--.ft-item-2//p.ft-t 推荐友链⌛
 //.ft-img-group
   //.img-group-item
   //-   a(href='javascript:void(0)' title='广告位招租')
@@ -918,38 +745,4 @@ document.addEventListener('pjax:error', (e) => {
   if (e.request.status === 404) {
     pjax.loadUrl('/404.html')
   }
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
-    var parent = document.getElementById('recent-posts');
-    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><a class="magnet_link_more"  href="https://chagumu.site/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
-    console.log('已挂载magnet')
-    parent.insertAdjacentHTML("afterbegin",child)}
-     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
-    <style></style><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
-for(var i = 0;i<arr.length;i++){
-    arr[i].classList.add('wow');
-    arr[i].classList.add('animate__zoomIn');
-    arr[i].setAttribute('data-wow-duration', '2s');
-    arr[i].setAttribute('data-wow-delay', '200ms');
-    arr[i].setAttribute('data-wow-offset', '30');
-    arr[i].setAttribute('data-wow-iteration', '1');
-  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
-for(var i = 0;i<arr.length;i++){
-    arr[i].classList.add('wow');
-    arr[i].classList.add('animate__zoomIn');
-    arr[i].setAttribute('data-wow-duration', '2s');
-    arr[i].setAttribute('data-wow-delay', '200ms');
-    arr[i].setAttribute('data-wow-offset', '30');
-    arr[i].setAttribute('data-wow-iteration', '1');
-  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
-  function gitcalendar_injector_config(){
-      var parent_div_git = document.getElementById('gitZone');
-      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
-      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
-      console.log('已挂载gitcalendar')
-      }
-
-    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
-        gitcalendar_injector_config()
-        GitCalendarInit("/api?chagumu-01",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'chagumu-01')
-    }
-  </script><!-- hexo injector body_end end --></body></html>
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
