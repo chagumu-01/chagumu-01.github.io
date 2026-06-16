@@ -1,3 +1,7 @@
 - class_name: 名册
   class_desc: 愿意再次打开的可爱站点
-  link_list: []
+  link_list:
+    - name: woodfish
+      link: https://woodfish.site/newBlog/
+      avatar: https://pic1.imgdb.cn/item/682f3d1658cb8da5c807b704.jpg
+      descr: 我喜欢你
