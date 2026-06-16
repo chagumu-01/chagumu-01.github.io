@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/posts/97b99e75.html</loc>
+    <loc>https://chagumu.site/posts/72c7d7d8.html</loc>
     
     <lastmod>2026-05-25</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/posts/72c7d7d8.html</loc>
+    <loc>https://chagumu.site/posts/97b99e75.html</loc>
     
     <lastmod>2026-05-25</lastmod>
     
@@ -263,15 +263,6 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/site/census/index.html</loc>
-    
-    <lastmod>2026-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chagumu.site/personal/love/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
@@ -281,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/personal/about/index.html</loc>
+    <loc>https://chagumu.site/site/census/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -300,6 +291,15 @@
   
   <url>
     <loc>https://chagumu.site/life/music/index.html</loc>
+    
+    <lastmod>2026-02-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/personal/about/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -335,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/box/gallery/index.html</loc>
+    <loc>https://chagumu.site/box/nav/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -344,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/box/nav/index.html</loc>
+    <loc>https://chagumu.site/box/gallery/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
