@@ -24,6 +24,24 @@
   content: none !important;
 }
 
+:root {
+  --readable-link-color: #167f8f;
+  --readable-link-hover-color: #0e5f6c;
+}
+
+#article-container a:not(.fancybox, .imgbox, .swf, .box, .pimgbox, .magnet_link),
+.post-content a,
+.page a {
+  color: var(--readable-link-color) !important;
+}
+
+#article-container a:not(.fancybox, .imgbox, .swf, .box, .pimgbox, .magnet_link):hover,
+.post-content a:hover,
+.page a:hover {
+  color: var(--readable-link-hover-color) !important;
+  text-decoration: underline;
+}
+
 .home-gallery-summary {
   display: flex;
   align-items: center;

@@ -1,11 +1,10 @@
 ---
-title: 唠叨
+title: 我的唠叨
 date: 2022-09-08 23:08:13
-comments: false
+comments: true
 ---
 
 <style>
-/* 哔哔页面 */
 #bibi button {
   color: #fff;
   border: 0;
@@ -17,7 +16,7 @@ comments: false
   font-weight: 500;
   text-align: center;
   transition: all 0.5s ease-out;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #5aa9b7, #68b690, #8aa8d8, #59c7aa);
   background-size: 1000% 1000%;
   animation: Gradient 60s linear infinite;
   outline: 0;
@@ -42,7 +41,7 @@ comments: false
 
 @media screen and (max-width: 800px) {
   #bibi .bb-card {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -61,14 +60,13 @@ comments: false
   height: 32px;
   border-radius: 50%;
   margin-right: 10px;
-  border-radius: 20px;
   overflow: hidden;
 }
 
-#bibi .card-header svg {
-  height: 20px;
-  width: 20px;
-  margin-left: 5px;
+#bibi .card-header .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #bibi .card-header .card-time {
@@ -89,17 +87,24 @@ comments: false
 
 #bibi .card-footer .card-label {
   border-radius: 5px;
-  padding: 0 5px;
+  padding: 0 8px;
   font-weight: 550;
-  border-radius: 5px;
   box-shadow: inset 0 -1px 0 rgb(27 31 35 / 12%);
   font-size: 14px;
   user-select: none;
   margin-right: 10px;
+  background: #5aa9b7;
+  color: #fff;
 }
 
-div#bb_loading img{
-  border-radius: 15px;
+#bibi .bb-empty {
+  width: 100%;
+  margin: 10px;
+  padding: 18px;
+  border: 1px dashed rgba(22, 127, 143, 0.45);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--font-color);
 }
 
 #bb-main {
@@ -108,11 +113,30 @@ div#bb_loading img{
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
 </style>
 
 <script src="/js/bibi.js"></script>
 
 <div id="bibi">
-<div class="bb-info"></div><div id="bb-main"></div>
+  <div class="bb-info"></div>
+  <div id="bb-main"></div>
 </div>
+
+<template id="bibi-template">
+  <article class="bb-card">
+    <div class="card-header">
+      <div class="avatar"><img class="nofancybox" src="/assets/avatar.webp" alt="avatar"></div>
+      <div class="name">chagumu</div>
+      <div class="card-time">2026-06-17</div>
+    </div>
+    <div class="card-content">这里写你的第一条唠叨。可以记录今天学了什么、踩了什么坑，或者只是随手一句话。</div>
+    <div class="card-footer"><div class="card-label">日常唠叨</div></div>
+  </article>
+</template>
+
+<!--
+添加自己的唠叨：
+1. 复制上面 template 里的 <article class="bb-card">...</article>。
+2. 修改头像、名字、日期、正文和标签。
+3. 想隐藏示例内容，就删掉示例 article，保留 template 标签即可。
+-->
