@@ -129,10 +129,19 @@ comments: true
       <div class="name">chagumu</div>
       <div class="card-time">2026-06-17</div>
     </div>
-    <div class="card-content">这里写你的第一条唠叨。可以记录今天学了什么、踩了什么坑，或者只是随手一句话。</div>
+    <div class="card-content">期末周又要学，还要投简历，好累啊</div>
     <div class="card-footer"><div class="card-label">日常唠叨</div></div>
   </article>
-</template>
+
+  <article class="bb-card">
+    <div class="card-header">
+      <div class="avatar"><img class="nofancybox" src="D:\other_blog\hexo_youqi\source\personal\bb\assets\avatar.webp" alt="avatar"></div>
+      <div class="name">chagumu</div>
+      <div class="card-time">2026-06-17</div>
+    </div>
+    <div class="card-content">听喜欢的歌也是非常美妙了</div>
+    <div class="card-footer"><div class="card-label">日常唠叨</div></div>
+  </article></template>
 
 <!--
 添加自己的唠叨：
