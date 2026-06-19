@@ -4291,7 +4291,7 @@ h1.page-title + .tag-cloud-list {
   position: absolute;
   top: calc(50% - 7px);
   color: #f47466;
-  content: '\f863';
+  content: '\f0c1';
   line-height: 1;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -8921,8 +8921,10 @@ span.card-clock-weather {
 }
 
 /* 右边栏设置齿轮转速 */
-i.fas.fa-cog.right_side {
-  animation: fa-spin 5s linear infinite;
+#rightside_config,
+#meihua-button,
+.rightMenu-item[href="javascript:toggleWinbox();"] {
+  display: none !important;
 }
 
 /* 文章封面箭头动画 */
