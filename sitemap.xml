@@ -2,6 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chagumu.site/java/core/index.html</loc>
+    
+    <lastmod>2026-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/site/time/index.html</loc>
+    
+    <lastmod>2026-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/box/gallery/index.html</loc>
+    
+    <lastmod>2026-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/personal/bb/index.html</loc>
+    
+    <lastmod>2026-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/friends/index.html</loc>
+    
+    <lastmod>2026-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chagumu.site/social/link/index.html</loc>
+    
+    <lastmod>2026-06-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chagumu.site/ai/path/index.html</loc>
     
     <lastmod>2026-06-16</lastmod>
@@ -56,24 +110,6 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/friends/index.html</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chagumu.site/social/link/index.html</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chagumu.site/posts/3be80767.html</loc>
     
     <lastmod>2026-05-25</lastmod>
@@ -83,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/posts/72c7d7d8.html</loc>
+    <loc>https://chagumu.site/posts/97b99e75.html</loc>
     
     <lastmod>2026-05-25</lastmod>
     
@@ -92,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/posts/97b99e75.html</loc>
+    <loc>https://chagumu.site/posts/72c7d7d8.html</loc>
     
     <lastmod>2026-05-25</lastmod>
     
@@ -147,15 +183,6 @@
   
   <url>
     <loc>https://chagumu.site/java/practice/index.html</loc>
-    
-    <lastmod>2026-04-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chagumu.site/java/core/index.html</loc>
     
     <lastmod>2026-04-30</lastmod>
     
@@ -245,15 +272,6 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/site/time/index.html</loc>
-    
-    <lastmod>2026-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chagumu.site/site/echarts/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
@@ -281,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/personal/bb/index.html</loc>
+    <loc>https://chagumu.site/personal/about/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -291,15 +309,6 @@
   
   <url>
     <loc>https://chagumu.site/life/music/index.html</loc>
-    
-    <lastmod>2026-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chagumu.site/personal/about/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -344,15 +353,6 @@
   </url>
   
   <url>
-    <loc>https://chagumu.site/box/gallery/index.html</loc>
-    
-    <lastmod>2026-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chagumu.site/box/animation/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
@@ -364,7 +364,7 @@
 
   <url>
     <loc>https://chagumu.site/</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
