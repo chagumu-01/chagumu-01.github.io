@@ -48,9 +48,9 @@ https://www.yuque.com/u63312805/wnyutc#%20%E3%80%8AJAVA%E5%AD%A6%E4%B9%A0%E7%AC%
 
 #### Romain:
 
- [【Romain way 的 Java 后端学习笔记】写在前面的话 && 目录](https://ucnw8805gmdh.feishu.cn/docx/YQled91XHouwHHxNPRGcuUlJn3d)
+ [【Romain way 的 Java 后端学习笔记】写在前面的话 && 目录](https://ucnw8805gmdh.feishu.cn/docx/YQled91XHouwHHxNPRGcuUlJn3d) 密码：78932155romain
 
-[【Romain way 的大模型应用开发学习笔记】学习路线及参考资料（0 基础入门版）](https://ucnw8805gmdh.feishu.cn/docx/QsywdWt99o6dRKxhHUlcmms3n2x)
+[【Romain way 的大模型应用开发学习笔记】学习路线及参考资料（0 基础入门版）](https://ucnw8805gmdh.feishu.cn/docx/U3ADdkdCWofDxTxHZWPcCYd4nse) 密码：78932155romain
 
 #### 牛肉：
 
