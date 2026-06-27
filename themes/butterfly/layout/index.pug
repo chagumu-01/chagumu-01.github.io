@@ -44,6 +44,66 @@ block content
       section.home-totoro-panel
         .totoro-board-host
           script.totoro-board-data(type='application/json')!= JSON.stringify(totoroPostDates)
+    .home-dashboard-row
+      .home-terminal-widget
+        .terminal-window
+          .terminal-titlebar
+            .terminal-dots
+              span.terminal-dot--red
+              span.terminal-dot--yellow
+              span.terminal-dot--green
+            .terminal-title-text chagumu@blog:~
+            .terminal-title-controls
+              span.terminal-minimize
+              span.terminal-maximize
+          .terminal-body
+            .terminal-ascii-art
+              pre.terminal-ascii
+                |  ██████╗██╗  ██╗███████╗███╗   ██╗
+                | ██╔════╝██║  ██║██╔════╝████╗  ██║
+                | ██║     ███████║█████╗  ██╔██╗ ██║
+                | ██║     ██══██║██╔══╝  ██║╚██╗██║
+                | ╚██████╗██║  ██║███████╗██║ ████║
+                |  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝
+            .terminal-output#terminal-output
+            .terminal-input-line
+              span.terminal-prompt $&nbsp;
+              input.terminal-input#terminal-input(type='text' autocomplete='off' spellcheck='false' placeholder='输入 help 查看可用命令...')
+      .home-status-widget
+        .status-panel
+          .status-panel__header
+            .status-panel__title
+              i.fas.fa-microchip
+              span SYS_MONITOR
+            .status-panel__uptime
+              span.uptime-label uptime
+              span#status-uptime 00:00:00
+          .status-panel__clock
+            span#status-clock 00:00:00
+          .status-metrics
+            .status-metric
+              .status-metric__label
+                span CPU.LOAD
+                span#cpu-value 0%
+              .status-metric__bar
+                .status-metric__fill#cpu-bar
+            .status-metric
+              .status-metric__label
+                span MEM.USAGE
+                span#mem-value 0%
+              .status-metric__bar
+                .status-metric__fill#mem-bar
+            .status-metric
+              .status-metric__label
+                span NET.SIGNAL
+                span#net-value 0%
+              .status-metric__bar
+                .status-metric__fill#net-bar
+          .status-panel__wave
+            canvas#status-wave-canvas
+          .status-panel__footer
+            span.status-panel__telemetry // telemetry · realtime
+            span#status-tx tx 0 kb/s
     //- #bber-talk
     //-   link(rel="stylesheet", href="/static/css/bbtalk.css")
     //-   script(src='/static/js/timeago.min.js')
