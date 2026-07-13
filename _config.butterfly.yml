@@ -689,7 +689,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: "我并不想说"
+    description: "时光会把你雕刻成你该有的样子"
     button:
       enable: true
       icon: # fab fa-github
