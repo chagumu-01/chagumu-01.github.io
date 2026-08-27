@@ -135,19 +135,20 @@ comments: false
   <div class="gallery-intro">
     <div>
       <h2>把路上的光收起来</h2>
-      <p>这里放我的风景照片：竖幅、安静、带一点呼吸感。之后有新照片，继续按下面的卡片格式追加就行。</p>
+      <p>这里放我的风景照片：竖幅、安静、带一点呼吸感。</p>
     </div>
-    <div class="gallery-count"><strong>8</strong><span>frames</span></div>
+    <div class="gallery-count"><strong>9</strong><span>frames</span></div>
   </div>
 
   <div class="gallery-grid">
-    <a class="gallery-photo fancybox" href="/assets/1.jpg" data-fancybox="landscape" data-caption="风景 01"><img src="/assets/1.jpg" alt="风景 01"><span class="gallery-caption"><span>风景 01</span><small>Quiet view</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/2.jpg" data-fancybox="landscape" data-caption="风景 02"><img src="/assets/2.jpg" alt="风景 02"><span class="gallery-caption"><span>风景 02</span><small>Soft weather</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/3.jpg" data-fancybox="landscape" data-caption="风景 03"><img src="/assets/3.jpg" alt="风景 03"><span class="gallery-caption"><span>风景 03</span><small>Slow walk</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/4.jpg" data-fancybox="landscape" data-caption="风景 04"><img src="/assets/4.jpg" alt="风景 04"><span class="gallery-caption"><span>风景 04</span><small>Clean air</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/5.jpg" data-fancybox="landscape" data-caption="风景 05"><img src="/assets/5.jpg" alt="风景 05"><span class="gallery-caption"><span>风景 05</span><small>Green hour</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/6.jpg" data-fancybox="landscape" data-caption="风景 06"><img src="/assets/6.jpg" alt="风景 06"><span class="gallery-caption"><span>风景 06</span><small>Open sky</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/7.jpg" data-fancybox="landscape" data-caption="风景 07"><img src="/assets/7.jpg" alt="风景 07"><span class="gallery-caption"><span>风景 07</span><small>Little pause</small></span></a>
-    <a class="gallery-photo fancybox" href="/assets/8.jpg" data-fancybox="landscape" data-caption="风景 08"><img src="/assets/8.jpg" alt="风景 08"><span class="gallery-caption"><span>风景 08</span><small>Long memory</small></span></a>
+    <a class="gallery-photo fancybox" href="/assets/1.jpg" data-fancybox="landscape" data-caption="Quiet view"><img src="/assets/1.jpg" alt="Quiet view"><span class="gallery-caption"><span>Quiet view</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/2.jpg" data-fancybox="landscape" data-caption="Soft weather"><img src="/assets/2.jpg" alt="Soft weather"><span class="gallery-caption"><span>Soft weather</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/3.jpg" data-fancybox="landscape" data-caption="Slow walk"><img src="/assets/3.jpg" alt="Slow walk"><span class="gallery-caption"><span>Slow walk</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/4.jpg" data-fancybox="landscape" data-caption="Clean air"><img src="/assets/4.jpg" alt="Clean air"><span class="gallery-caption"><span>Clean air</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/5.jpg" data-fancybox="landscape" data-caption="Green hour"><img src="/assets/5.jpg" alt="Green hour"><span class="gallery-caption"><span>Green hour</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/6.jpg" data-fancybox="landscape" data-caption="Open sky"><img src="/assets/6.jpg" alt="Open sky"><span class="gallery-caption"><span>Open sky</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/7.jpg" data-fancybox="landscape" data-caption="Little pause"><img src="/assets/7.jpg" alt="Little pause"><span class="gallery-caption"><span>Little pause</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/8.jpg" data-fancybox="landscape" data-caption="Long memory"><img src="/assets/8.jpg" alt="Long memory"><span class="gallery-caption"><span>Long memory</span></span></a>
+    <a class="gallery-photo fancybox" href="/assets/9.jpg" data-fancybox="landscape" data-caption="Golden hour"><img src="/assets/9.jpg" alt="Golden hour"><span class="gallery-caption"><span>Golden hour</span></span></a>
   </div>
 </section>
