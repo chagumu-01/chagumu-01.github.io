@@ -829,21 +829,25 @@
 }
 
 @keyframes totoro-sway {
+
   0%,
   100% {
     transform: rotate(-4deg) translateY(0);
   }
+
   50% {
     transform: rotate(4deg) translateY(-2px);
   }
 }
 
 @keyframes totoro-blink {
+
   0%,
   89%,
   100% {
     transform: scaleY(1);
   }
+
   92%,
   95% {
     transform: scaleY(0.18);
@@ -972,8 +976,15 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .hero-title {
@@ -1074,8 +1085,15 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* 区块标题 */
@@ -1726,13 +1744,13 @@
 .terminal-window {
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(10, 20, 40, 0.88);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.95));
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(0, 209, 255, 0.15);
+    0 20px 50px rgba(121, 148, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(118, 153, 255, 0.14);
 }
 
 .terminal-titlebar {
@@ -1740,8 +1758,8 @@
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: rgba(0, 10, 25, 0.6);
-  border-bottom: 1px solid rgba(0, 209, 255, 0.1);
+  background: linear-gradient(135deg, rgba(93, 225, 196, 0.12), rgba(130, 140, 255, 0.1));
+  border-bottom: 1px solid rgba(118, 153, 255, 0.14);
 }
 
 .terminal-dots {
@@ -1777,7 +1795,7 @@
   flex: 1;
   text-align: center;
   font-size: 12px;
-  color: rgba(0, 209, 255, 0.6);
+  color: #34767e;
   font-family: 'Consolas', 'Courier New', monospace;
   letter-spacing: 0.05em;
 }
@@ -1791,14 +1809,14 @@
 .terminal-maximize {
   width: 14px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(100, 130, 160, 0.4);
   border-radius: 1px;
 }
 
 .terminal-maximize {
   width: 10px;
   height: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(100, 130, 160, 0.4);
   background: transparent;
   border-radius: 2px;
 }
@@ -1811,7 +1829,7 @@
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 13px;
   line-height: 1.7;
-  color: #b8d4e3;
+  color: #244052;
 }
 
 .terminal-body::-webkit-scrollbar {
@@ -1823,7 +1841,7 @@
 }
 
 .terminal-body::-webkit-scrollbar-thumb {
-  background: rgba(0, 209, 255, 0.3);
+  background: rgba(93, 225, 196, 0.4);
   border-radius: 2px;
 }
 
@@ -1836,8 +1854,8 @@
   margin: 0;
   font-size: 10px;
   line-height: 1.2;
-  color: #00d1ff;
-  text-shadow: 0 0 8px rgba(0, 209, 255, 0.3);
+  color: #167f8f;
+  text-shadow: none;
   white-space: pre;
 }
 
@@ -1852,37 +1870,37 @@
 }
 
 .terminal-line--cmd {
-  color: #e0f0ff;
+  color: #244052;
 }
 
 .terminal-line--cmd::before {
   content: '$ ';
-  color: #00d1ff;
+  color: #167f8f;
 }
 
 .terminal-line--response {
-  color: #7ec8e3;
+  color: #4b6584;
   padding-left: 4px;
 }
 
 .terminal-line--error {
-  color: #ff6b8a;
+  color: #e53e3e;
 }
 
 .terminal-line--success {
-  color: #28c840;
+  color: #28a845;
 }
 
 .terminal-line--info {
-  color: #ffbd2e;
+  color: #b7791f;
 }
 
 .terminal-line--link {
-  color: #00d1ff;
+  color: #0e5f6c;
 }
 
 .terminal-line--link a {
-  color: #00d1ff;
+  color: #0e5f6c;
   text-decoration: none;
 }
 
@@ -1891,8 +1909,15 @@
 }
 
 @keyframes terminalFadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .terminal-input-line {
@@ -1900,11 +1925,11 @@
   align-items: center;
   gap: 0;
   padding-top: 8px;
-  border-top: 1px solid rgba(0, 209, 255, 0.08);
+  border-top: 1px solid rgba(118, 153, 255, 0.14);
 }
 
 .terminal-prompt {
-  color: #00d1ff;
+  color: #167f8f;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 13px;
   flex-shrink: 0;
@@ -1915,14 +1940,14 @@
   background: transparent;
   border: none;
   outline: none;
-  color: #e0f0ff;
+  color: #244052;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 13px;
-  caret-color: #00d1ff;
+  caret-color: #167f8f;
 }
 
 .terminal-input::placeholder {
-  color: rgba(120, 180, 210, 0.35);
+  color: rgba(100, 130, 160, 0.5);
 }
 
 /* --- 系统状态面板 --- */
@@ -1933,13 +1958,13 @@
 .status-panel {
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(10, 20, 40, 0.88);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.95));
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(0, 209, 255, 0.15);
+    0 20px 50px rgba(121, 148, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(118, 153, 255, 0.14);
   padding: 18px 20px;
 }
 
@@ -1957,20 +1982,20 @@
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 14px;
   font-weight: 700;
-  color: #00d1ff;
+  color: #167f8f;
   letter-spacing: 0.12em;
 }
 
 .status-panel__title i {
   font-size: 16px;
-  color: #00e5ff;
-  text-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+  color: #0e5f6c;
+  text-shadow: none;
 }
 
 .status-panel__uptime {
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 12px;
-  color: rgba(0, 209, 255, 0.5);
+  color: rgba(100, 130, 160, 0.7);
 }
 
 .uptime-label {
@@ -1978,7 +2003,7 @@
 }
 
 #status-uptime {
-  color: #00e5ff;
+  color: #0e5f6c;
   font-weight: 600;
 }
 
@@ -1988,10 +2013,10 @@
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 28px;
   font-weight: 700;
-  color: #e0f0ff;
+  color: #244052;
   letter-spacing: 0.08em;
   margin-bottom: 18px;
-  text-shadow: 0 0 12px rgba(0, 209, 255, 0.2);
+  text-shadow: none;
 }
 
 .status-metrics {
@@ -2017,11 +2042,11 @@
 }
 
 .status-metric__label span:first-child {
-  color: rgba(180, 210, 230, 0.7);
+  color: rgba(100, 130, 160, 0.8);
 }
 
 .status-metric__label span:last-child {
-  color: #00e5ff;
+  color: #0e5f6c;
   font-weight: 700;
   font-size: 12px;
 }
@@ -2029,9 +2054,9 @@
 .status-metric__bar {
   height: 8px;
   border-radius: 4px;
-  background: rgba(0, 209, 255, 0.08);
+  background: rgba(93, 225, 196, 0.1);
   overflow: hidden;
-  border: 1px solid rgba(0, 209, 255, 0.1);
+  border: 1px solid rgba(118, 153, 255, 0.14);
 }
 
 .status-metric__fill {
@@ -2043,18 +2068,18 @@
 }
 
 #cpu-bar {
-  background: linear-gradient(90deg, #00d1ff, #00e5ff, #18ffff);
-  box-shadow: 0 0 10px rgba(0, 209, 255, 0.4);
+  background: linear-gradient(90deg, #59ddc0, #16c784, #34d399);
+  box-shadow: none;
 }
 
 #mem-bar {
   background: linear-gradient(90deg, #0ea5a6, #16c784, #34d399);
-  box-shadow: 0 0 10px rgba(22, 199, 132, 0.4);
+  box-shadow: none;
 }
 
 #net-bar {
-  background: linear-gradient(90deg, #6a7fff, #59ddc0, #00d1ff);
-  box-shadow: 0 0 10px rgba(106, 127, 255, 0.4);
+  background: linear-gradient(90deg, #6a7fff, #59ddc0, #167f8f);
+  box-shadow: none;
 }
 
 .status-metric__fill::after {
@@ -2069,8 +2094,13 @@
 }
 
 @keyframes barShimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 .status-panel__wave {
@@ -2078,8 +2108,8 @@
   margin-bottom: 12px;
   border-radius: 8px;
   overflow: hidden;
-  background: rgba(0, 209, 255, 0.03);
-  border: 1px solid rgba(0, 209, 255, 0.06);
+  background: rgba(93, 225, 196, 0.05);
+  border: 1px solid rgba(118, 153, 255, 0.1);
 }
 
 #status-wave-canvas {
@@ -2094,12 +2124,12 @@
   align-items: center;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 11px;
-  color: rgba(0, 209, 255, 0.35);
+  color: rgba(100, 130, 160, 0.5);
   letter-spacing: 0.05em;
 }
 
 #status-tx {
-  color: rgba(0, 229, 255, 0.6);
+  color: rgba(14, 95, 108, 0.7);
 }
 
 /* --- 响应式 --- */
@@ -2145,6 +2175,101 @@
 /* 暗色模式适配 */
 [data-theme="dark"] .terminal-window,
 [data-theme="dark"] .status-panel {
-  background: rgba(5, 12, 25, 0.92);
-  border-color: rgba(0, 209, 255, 0.2);
+  background: rgba(15, 25, 45, 0.95);
+  border-color: rgba(93, 225, 196, 0.2);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .terminal-titlebar {
+  background: linear-gradient(135deg, rgba(93, 225, 196, 0.15), rgba(130, 140, 255, 0.12));
+  border-bottom-color: rgba(93, 225, 196, 0.15);
+}
+
+[data-theme="dark"] .terminal-title-text {
+  color: rgba(93, 225, 196, 0.7);
+}
+
+[data-theme="dark"] .terminal-body {
+  color: #c8dce8;
+}
+
+[data-theme="dark"] .terminal-ascii {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .terminal-line--cmd {
+  color: #e0f0ff;
+}
+
+[data-theme="dark"] .terminal-line--cmd::before {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .terminal-line--response {
+  color: #8ab4c8;
+}
+
+[data-theme="dark"] .terminal-input {
+  color: #e0f0ff;
+  caret-color: #59ddc0;
+}
+
+[data-theme="dark"] .terminal-prompt {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .terminal-input::placeholder {
+  color: rgba(120, 180, 210, 0.35);
+}
+
+[data-theme="dark"] .terminal-input-line {
+  border-top-color: rgba(93, 225, 196, 0.1);
+}
+
+[data-theme="dark"] .status-panel__title {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .status-panel__title i {
+  color: #00e5ff;
+}
+
+[data-theme="dark"] .status-panel__uptime {
+  color: rgba(93, 225, 196, 0.5);
+}
+
+[data-theme="dark"] #status-uptime {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .status-panel__clock {
+  color: #e0f0ff;
+}
+
+[data-theme="dark"] .status-metric__label span:first-child {
+  color: rgba(180, 210, 230, 0.7);
+}
+
+[data-theme="dark"] .status-metric__label span:last-child {
+  color: #59ddc0;
+}
+
+[data-theme="dark"] .status-metric__bar {
+  background: rgba(93, 225, 196, 0.1);
+  border-color: rgba(93, 225, 196, 0.15);
+}
+
+[data-theme="dark"] .status-panel__wave {
+  background: rgba(93, 225, 196, 0.08);
+  border-color: rgba(93, 225, 196, 0.12);
+}
+
+[data-theme="dark"] .status-panel__footer {
+  color: rgba(180, 210, 230, 0.4);
+}
+
+[data-theme="dark"] #status-tx {
+  color: rgba(93, 225, 196, 0.7);
 }

@@ -4269,10 +4269,10 @@ function drawWaveCanvas(canvas) {
 
     // 渐变描边
     var gradient = ctx.createLinearGradient(0, 0, width, 0);
-    gradient.addColorStop(0, 'rgba(0, 209, 255, 0.1)');
-    gradient.addColorStop(0.3, 'rgba(0, 229, 255, 0.6)');
-    gradient.addColorStop(0.7, 'rgba(0, 209, 255, 0.8)');
-    gradient.addColorStop(1, 'rgba(24, 255, 255, 0.4)');
+    gradient.addColorStop(0, 'rgba(22, 127, 143, 0.2)');
+    gradient.addColorStop(0.3, 'rgba(14, 95, 108, 0.7)');
+    gradient.addColorStop(0.7, 'rgba(22, 127, 143, 0.9)');
+    gradient.addColorStop(1, 'rgba(10, 80, 95, 0.5)');
     ctx.strokeStyle = gradient;
     ctx.lineWidth = 1.5;
     ctx.stroke();
@@ -4282,8 +4282,8 @@ function drawWaveCanvas(canvas) {
     ctx.lineTo(0, height);
     ctx.closePath();
     var fillGradient = ctx.createLinearGradient(0, 0, 0, height);
-    fillGradient.addColorStop(0, 'rgba(0, 209, 255, 0.08)');
-    fillGradient.addColorStop(1, 'rgba(0, 209, 255, 0.01)');
+    fillGradient.addColorStop(0, 'rgba(22, 127, 143, 0.1)');
+    fillGradient.addColorStop(1, 'rgba(22, 127, 143, 0.02)');
     ctx.fillStyle = fillGradient;
     ctx.fill();
 
