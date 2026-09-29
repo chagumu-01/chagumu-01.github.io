@@ -4304,3 +4304,74 @@ function drawWaveCanvas(canvas) {
   });
 }
 /* 首页系统状态面板 end */
+
+/* 知识库文章侧边栏：在 PJAX 切换后同步当前文章高亮 */
+(function () {
+  var storageKey = 'knowledge-post-sidebar-collapsed';
+
+  function setCollapsed(root, closeButton, openButton, collapsed) {
+    root.classList.toggle('knowledge-sidebar-collapsed', collapsed);
+    if (collapsed) {
+      openButton.removeAttribute('hidden');
+    } else {
+      openButton.setAttribute('hidden', '');
+    }
+    closeButton.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    openButton.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    try {
+      localStorage.setItem(storageKey, collapsed ? '1' : '0');
+    } catch (error) {}
+  }
+
+  function updateCurrent(sidebar) {
+    var currentPath = window.location.pathname.replace(/\/$/, '').toLowerCase();
+    sidebar.querySelectorAll('.knowledge-post-sidebar__links a.is-current').forEach(function (link) {
+      link.classList.remove('is-current');
+    });
+
+    sidebar.querySelectorAll('a[href]').forEach(function (link) {
+      var linkPath = new URL(link.getAttribute('href'), window.location.origin).pathname.replace(/\/$/, '').toLowerCase();
+      if (linkPath === currentPath) {
+        link.classList.add('is-current');
+        var parentCollection = link.closest('.knowledge-post-sidebar__collection');
+        var parentGroup = link.closest('.knowledge-post-sidebar__group');
+        if (parentCollection) parentCollection.open = true;
+        if (parentGroup) parentGroup.open = true;
+      }
+    });
+  }
+
+  window.initKnowledgeSidebar = function () {
+    var root = document.getElementById('body-wrap');
+    var sidebar = document.querySelector('[data-knowledge-sidebar]');
+    var closeButton = document.querySelector('[data-knowledge-sidebar-close]');
+    var openButton = document.querySelector('[data-knowledge-sidebar-open]');
+    if (!root || !sidebar || !closeButton || !openButton) return;
+
+    if (!closeButton.dataset.knowledgeSidebarBound) {
+      closeButton.dataset.knowledgeSidebarBound = '1';
+      closeButton.addEventListener('click', function () {
+        setCollapsed(root, closeButton, openButton, true);
+      });
+    }
+
+    if (!openButton.dataset.knowledgeSidebarBound) {
+      openButton.dataset.knowledgeSidebarBound = '1';
+      openButton.addEventListener('click', function () {
+        setCollapsed(root, closeButton, openButton, false);
+      });
+    }
+
+    updateCurrent(sidebar);
+
+    try {
+      setCollapsed(root, closeButton, openButton, localStorage.getItem(storageKey) === '1');
+    } catch (error) {
+      setCollapsed(root, closeButton, openButton, false);
+    }
+  };
+
+  window.initKnowledgeSidebar();
+  document.removeEventListener('pjax:complete', window.initKnowledgeSidebar);
+  document.addEventListener('pjax:complete', window.initKnowledgeSidebar);
+})();

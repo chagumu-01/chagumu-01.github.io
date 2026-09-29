@@ -56,7 +56,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
             div!= body
           else
             block content
-            if theme.aside.enable && page.aside !== false
+            if !is_post() && theme.aside.enable && page.aside !== false
               include widget/index.pug
 
         - var footerBg = theme.footer_bg

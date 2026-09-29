@@ -1,0 +1,32 @@
+aside.knowledge-post-sidebar(data-knowledge-sidebar)
+  button.knowledge-post-sidebar__close(type="button" aria-label="关闭知识库侧边栏" title="关闭侧边栏" data-knowledge-sidebar-close)
+    span.knowledge-post-sidebar__toggle-icon(aria-hidden="true")
+  .knowledge-post-sidebar__brand
+    span.knowledge-post-sidebar__mark
+      i.fas.fa-book-open
+    span 知识库
+
+  details.knowledge-post-sidebar__group
+    summary Java
+    .knowledge-post-sidebar__items
+      span.knowledge-post-sidebar__empty 暂无文档
+
+  details.knowledge-post-sidebar__group(open)
+    summary Agent
+    .knowledge-post-sidebar__items
+      details.knowledge-post-sidebar__collection(open)
+        summary 《大模型基础知识》
+        nav.knowledge-post-sidebar__links
+          a(class={ 'is-current': page.path === 'posts/e48005e0.html' } href=url_for('/posts/e48005e0.html')) 大模型学习基础概念
+          a(class={ 'is-current': page.path === 'posts/3be80767.html' } href=url_for('/posts/3be80767.html')) 从 LLM 到 RAG 再到 Agent：技术演进路径
+          a(class={ 'is-current': page.path === 'posts/b43bf9d3.html' } href=url_for('/posts/b43bf9d3.html')) RAG中的Indexing全解析
+          a(class={ 'is-current': page.path === 'posts/73f49caa.html' } href=url_for('/posts/73f49caa.html')) langchain中的chain到底是什么
+          a(class={ 'is-current': page.path === 'posts/afd39a7c.html' } href=url_for('/posts/afd39a7c.html')) MCP的理解
+          a(class={ 'is-current': page.path === 'posts/72c7d7d8.html' } href=url_for('/posts/72c7d7d8.html')) 微调——顾名思义
+          a(class={ 'is-current': page.path === 'posts/97b99e75.html' } href=url_for('/posts/97b99e75.html')) 多模态AI完全指南
+          a(class={ 'is-current': page.path === 'posts/d84e566c.html' } href=url_for('/posts/d84e566c.html')) LLM的“小bug”：聊聊幻觉是什么，以及如何有效规避免
+          a(class={ 'is-current': page.path === 'posts/f15d659f.html' } href=url_for('/posts/f15d659f.html')) LLM的另一个硬伤：知识过时
+          a(class={ 'is-current': page.path === 'posts/b62370ab.html' } href=url_for('/posts/b62370ab.html')) AI Agent 开发的工业化道路：Harness 架构深度解析
+
+button.knowledge-post-sidebar__reopen(type="button" aria-label="打开知识库侧边栏" title="打开知识库" data-knowledge-sidebar-open)
+  span.knowledge-post-sidebar__toggle-icon(aria-hidden="true")

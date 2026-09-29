@@ -7,9 +7,7 @@ menu:
   友链: /friends/ || fas fa-link || faa-tada
   开往: https://www.travellings.cn/go.html || fas fa-train-subway || faa-tada
   文章 || icon--article || faa-tada || hide:
-    归档: /archives/ || icon-guidang1 || faa-tada
-    标签: /tags/ || icon-sekuaibiaoqian || faa-tada
-    分类: /categories/ || icon-fenlei || faa-tada
+    知识库: /posts/e48005e0.html || fas fa-book-open || faa-tada
   自述: /about/ || icon-paperplane || faa-tada
   社交 || icon-shejiaoxinxi || faa-tada || hide:
     留言板: /comments/ || icon-liuyan || faa-tada
@@ -197,7 +195,7 @@ toc:
   post: true
   page: false
   number: false
-  expand: false
+  expand: true
   style_simple: true # for post
 
 post_copyright:
